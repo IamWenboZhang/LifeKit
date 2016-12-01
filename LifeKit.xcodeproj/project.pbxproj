@@ -1,0 +1,1427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD0740D21DE483EE009F4DD6 /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0740D01DE483ED009F4DD6 /* RefreshControl.swift */; };
+		AD0740D31DE483EE009F4DD6 /* RefreshTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0740D11DE483EE009F4DD6 /* RefreshTipView.swift */; };
+		AD090F381DE889EE007850B0 /* TrafficRestrictionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD090F371DE889EE007850B0 /* TrafficRestrictionTableViewController.swift */; };
+		AD090F421DE89855007850B0 /* CarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD090F411DE89855007850B0 /* CarHelper.swift */; };
+		AD125FD41DEFB9CE0026E9C4 /* HuiLvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */; };
+		AD1613211DDB170F00EB53F0 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1613201DDB170F00EB53F0 /* WeatherView.swift */; };
+		AD16132A1DDB212E00EB53F0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1613291DDB212E00EB53F0 /* WeatherViewController.swift */; };
+		AD16132C1DDB50B000EB53F0 /* WeatherContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */; };
+		AD16132E1DDB620300EB53F0 /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16132D1DDB620300EB53F0 /* WeatherContentView.swift */; };
+		AD1613301DDB71A200EB53F0 /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16132F1DDB71A200EB53F0 /* MainWeatherView.swift */; };
+		AD2953371DD029C1009465C6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD29532A1DD029AD009465C6 /* Alamofire.framework */; };
+		AD2953381DD029C1009465C6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD29532A1DD029AD009465C6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD29533E1DD02B8D009465C6 /* ShowApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29533D1DD02B8D009465C6 /* ShowApiRequest.swift */; };
+		AD2953431DD052F4009465C6 /* NewestLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */; };
+		AD2953441DD052F4009465C6 /* NewestLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */; };
+		AD2953451DD052F4009465C6 /* NewestLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */; };
+		AD29534A1DD0547B009465C6 /* MutileLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */; };
+		AD29534B1DD0547B009465C6 /* MutileLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */; };
+		AD29534C1DD0547B009465C6 /* MutileLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */; };
+		AD2953511DD054B0009465C6 /* SingleLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */; };
+		AD2953521DD054B0009465C6 /* SingleLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */; };
+		AD2953531DD054B0009465C6 /* SingleLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */; };
+		AD2953581DD0578A009465C6 /* LotteryTypeShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953551DD0578A009465C6 /* LotteryTypeShowapiResBody.swift */; };
+		AD2953591DD0578A009465C6 /* LotteryTypeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953561DD0578A009465C6 /* LotteryTypeResult.swift */; };
+		AD29535A1DD0578A009465C6 /* LotteryTypeRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953571DD0578A009465C6 /* LotteryTypeRootClass.swift */; };
+		AD2BA4A71DBE486C00F41E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4A61DBE486C00F41E69 /* AppDelegate.swift */; };
+		AD2BA4AE1DBE486C00F41E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2BA4AD1DBE486C00F41E69 /* Assets.xcassets */; };
+		AD2BA4B11DBE486C00F41E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2BA4AF1DBE486C00F41E69 /* LaunchScreen.storyboard */; };
+		AD2BA4BC1DBE486C00F41E69 /* LifeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4BB1DBE486C00F41E69 /* LifeKitTests.swift */; };
+		AD2BA4C71DBE486C00F41E69 /* LifeKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4C61DBE486C00F41E69 /* LifeKitUITests.swift */; };
+		AD2BA4E51DBE486C00F41E69 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E41DBE486C00F41E69 /* Config.swift */; };
+		AD2BA4E71DBE486C00F41E69 /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E61DBE486C00F41E69 /* LifeViewController.swift */; };
+		AD2BA4E91DBE486C00F41E69 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E81DBE486C00F41E69 /* CarViewController.swift */; };
+		AD2BA4EB1DBE486C00F41E69 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */; };
+		AD2BA4ED1DBE486C00F41E69 /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */; };
+		AD2BA4EF1DBE486C00F41E69 /* LifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EE1DBE486C00F41E69 /* LifeView.swift */; };
+		AD37E2131DCADA240072C2A4 /* LotteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E2121DCADA240072C2A4 /* LotteryView.swift */; };
+		AD37E2151DCADD4B0072C2A4 /* WeiZhangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E2141DCADD4B0072C2A4 /* WeiZhangView.swift */; };
+		AD37E2181DCAE0940072C2A4 /* WeiZhangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E2171DCAE0940072C2A4 /* WeiZhangViewController.swift */; };
+		AD37E2201DCAE5F90072C2A4 /* AqiDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E2191DCAE5F90072C2A4 /* AqiDetail.swift */; };
+		AD37E2211DCAE5F90072C2A4 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21A1DCAE5F90072C2A4 /* CityInfo.swift */; };
+		AD37E2221DCAE5F90072C2A4 /* F1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21B1DCAE5F90072C2A4 /* F1.swift */; };
+		AD37E2241DCAE5F90072C2A4 /* Now.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21D1DCAE5F90072C2A4 /* Now.swift */; };
+		AD37E2251DCAE5F90072C2A4 /* WeatherRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21E1DCAE5F90072C2A4 /* WeatherRootClass.swift */; };
+		AD37E2261DCAE5F90072C2A4 /* WeatherShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21F1DCAE5F90072C2A4 /* WeatherShowapiResBody.swift */; };
+		AD3A73E91DE8402000FF2922 /* TrafficRestrictionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A73E81DE8401F00FF2922 /* TrafficRestrictionTableViewCell.swift */; };
+		AD5098D11DEC1253009413D1 /* OilPriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5098D01DEC1253009413D1 /* OilPriceTableViewController.swift */; };
+		AD6565F41DD81B3300979BF1 /* FZXQJW_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AD0DC36C1DD56E77005B3E37 /* FZXQJW_0.TTF */; };
+		AD6565FD1DD8226E00979BF1 /* CODE LIGHT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = AD6565FC1DD8226E00979BF1 /* CODE LIGHT.OTF */; };
+		AD6B9A7E1DED83B600A82C5B /* KuaiDiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */; };
+		AD6B9A7F1DED83B600A82C5B /* KuaiDiRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */; };
+		AD6B9A801DED83B600A82C5B /* KuaiDiShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */; };
+		AD6C4B8F1DD9F8DB0084C291 /* SwiftPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */; };
+		AD7BA8001DE67DBD00A67510 /* YunShiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BA7FF1DE67DBD00A67510 /* YunShiTableViewCell.swift */; };
+		AD9426841DEE7BE6006D975D /* HuiLvHQList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94267F1DEE7BE6006D975D /* HuiLvHQList.swift */; };
+		AD9426851DEE7BE6006D975D /* HuiLvHQRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426801DEE7BE6006D975D /* HuiLvHQRootClass.swift */; };
+		AD9426861DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426811DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift */; };
+		AD9426871DEE7BE6006D975D /* HuiLvRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426821DEE7BE6006D975D /* HuiLvRootClass.swift */; };
+		AD9426881DEE7BE6006D975D /* HuiLvShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426831DEE7BE6006D975D /* HuiLvShowapiResBody.swift */; };
+		AD9426941DEEA17D006D975D /* HuiLvCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426931DEEA17D006D975D /* HuiLvCalcView.swift */; };
+		AD9B0D651DC9A8E0004EEFB6 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B0D641DC9A8E0004EEFB6 /* CarView.swift */; };
+		ADA94DC81DD171730093D049 /* ConstellationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA94DC71DD171730093D049 /* ConstellationBox.swift */; };
+		ADA94DDC1DD1B14C0093D049 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA94DD91DD1B14C0093D049 /* Day.swift */; };
+		ADA94DDD1DD1B14C0093D049 /* ConstellationRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA94DDA1DD1B14C0093D049 /* ConstellationRootClass.swift */; };
+		ADA94DDE1DD1B14C0093D049 /* ConstellationShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA94DDB1DD1B14C0093D049 /* ConstellationShowapiResBody.swift */; };
+		ADAE75181DD0925000725A9D /* WeatherBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE75171DD0925000725A9D /* WeatherBox.swift */; };
+		ADB902301DE1CE9E001CF7F1 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9022F1DE1CE9E001CF7F1 /* ChineseToPinyin.m */; };
+		ADB9023F1DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB902341DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m */; };
+		ADB902401DE1CED3001CF7F1 /* EMCityChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB902361DE1CED3001CF7F1 /* EMCityChoose.m */; };
+		ADB902411DE1CED3001CF7F1 /* EMcitydict_S.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB902371DE1CED3001CF7F1 /* EMcitydict_S.plist */; };
+		ADB902421DE1CED3001CF7F1 /* EMcitydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADB902381DE1CED3001CF7F1 /* EMcitydict.plist */; };
+		ADB902431DE1CED3001CF7F1 /* EMCurrentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9023A1DE1CED3001CF7F1 /* EMCurrentCell.m */; };
+		ADB902441DE1CED3001CF7F1 /* EMHotCitysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9023C1DE1CED3001CF7F1 /* EMHotCitysCell.m */; };
+		ADB902451DE1CED3001CF7F1 /* EMSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9023E1DE1CED3001CF7F1 /* EMSearchCell.m */; };
+		ADB902541DE1D0C2001CF7F1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902481DE1D0C2001CF7F1 /* Constraint.swift */; };
+		ADB902551DE1D0C2001CF7F1 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902491DE1D0C2001CF7F1 /* ConstraintAttributes.swift */; };
+		ADB902561DE1D0C2001CF7F1 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024A1DE1D0C2001CF7F1 /* ConstraintDescription.swift */; };
+		ADB902571DE1D0C2001CF7F1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024B1DE1D0C2001CF7F1 /* ConstraintItem.swift */; };
+		ADB902581DE1D0C2001CF7F1 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024C1DE1D0C2001CF7F1 /* ConstraintMaker.swift */; };
+		ADB902591DE1D0C2001CF7F1 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024D1DE1D0C2001CF7F1 /* ConstraintRelation.swift */; };
+		ADB9025A1DE1D0C2001CF7F1 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024E1DE1D0C2001CF7F1 /* Debugging.swift */; };
+		ADB9025B1DE1D0C2001CF7F1 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9024F1DE1D0C2001CF7F1 /* EdgeInsets.swift */; };
+		ADB9025C1DE1D0C2001CF7F1 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902501DE1D0C2001CF7F1 /* LayoutConstraint.swift */; };
+		ADB9025D1DE1D0C2001CF7F1 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902511DE1D0C2001CF7F1 /* SnapKit.swift */; };
+		ADB9025E1DE1D0C2001CF7F1 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902521DE1D0C2001CF7F1 /* View+SnapKit.swift */; };
+		ADB9025F1DE1D0C2001CF7F1 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902531DE1D0C2001CF7F1 /* ViewController+SnapKit.swift */; };
+		ADC3B2A81DDD579A00203AAF /* ConstellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */; };
+		ADC3B2AC1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3B2AB1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift */; };
+		ADC5AE7F1DC9B247006730B4 /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AE7E1DC9B247006730B4 /* TrainView.swift */; };
+		ADCD6AD81DDECEAE00BB154A /* LuckForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD6AD71DDECEAE00BB154A /* LuckForm.swift */; };
+		ADCD6AE11DDEDD6600BB154A /* LuckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD6AE01DDEDD6600BB154A /* LuckTableViewCell.swift */; };
+		ADD9DAC61DE5DC78005A2EDF /* GuiRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9DAC51DE5DC78005A2EDF /* GuiRenTableViewCell.swift */; };
+		ADDD0B061DE72100005D10BE /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD0B051DE72100005D10BE /* TextViewTableViewCell.swift */; };
+		ADE886EB1DEDA4350086F2CF /* KuaiDiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE886EA1DEDA4350086F2CF /* KuaiDiViewController.swift */; };
+		ADE94EE71DCC6CD500F98A58 /* LifeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EE61DCC6CD500F98A58 /* LifeHelper.swift */; };
+		ADE94EEB1DCC6F0D00F98A58 /* TrafficRestrictionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EE81DCC6F0D00F98A58 /* TrafficRestrictionData.swift */; };
+		ADE94EEC1DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EE91DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift */; };
+		ADE94EED1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EEA1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift */; };
+		ADE94EF21DCC6F6800F98A58 /* OilPriceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EEF1DCC6F6800F98A58 /* OilPriceList.swift */; };
+		ADE94EF31DCC6F6800F98A58 /* OilPriceRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF01DCC6F6800F98A58 /* OilPriceRootClass.swift */; };
+		ADE94EF41DCC6F6800F98A58 /* OilPriceShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF11DCC6F6800F98A58 /* OilPriceShowapiResBody.swift */; };
+		ADE94EFB1DCC6FB600F98A58 /* TrainTicketInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF61DCC6FB600F98A58 /* TrainTicketInfoData.swift */; };
+		ADE94EFC1DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF71DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift */; };
+		ADE94EFD1DCC6FB600F98A58 /* TrainTicketPrinceSeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF81DCC6FB600F98A58 /* TrainTicketPrinceSeat.swift */; };
+		ADE94EFE1DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EF91DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift */; };
+		ADE94EFF1DCC6FB600F98A58 /* SeatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94EFA1DCC6FB600F98A58 /* SeatInfo.swift */; };
+		ADE94F051DCC700C00F98A58 /* TrainTimeListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F021DCC700C00F98A58 /* TrainTimeListData.swift */; };
+		ADE94F061DCC700C00F98A58 /* TrainTimeListRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F031DCC700C00F98A58 /* TrainTimeListRootClass.swift */; };
+		ADE94F071DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */; };
+		ADE94F0B1DCC7C8600F98A58 /* LotteryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F091DCC7C8600F98A58 /* LotteryHelper.swift */; };
+		ADE94F0C1DCC7C8600F98A58 /* TrainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */; };
+		ADFE265B1DDC642C00CBA61F /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE265A1DDC642C00CBA61F /* WeatherDataView.swift */; };
+		ADFE26641DDC73DC00CBA61F /* LibByMrOwl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD2953291DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		AD29532B1DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		AD29532D1DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		AD29532F1DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		AD2953311DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		AD2953331DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		AD2953351DD029AD009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		AD2953391DD029C1009465C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		AD2BA4B81DBE486C00F41E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD2BA49B1DBE486C00F41E69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD2BA4A21DBE486C00F41E69;
+			remoteInfo = LifeKit;
+		};
+		AD2BA4C31DBE486C00F41E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD2BA49B1DBE486C00F41E69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD2BA4A21DBE486C00F41E69;
+			remoteInfo = LifeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD29533B1DD029C1009465C6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD2953381DD029C1009465C6 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AD0740D01DE483ED009F4DD6 /* RefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
+		AD0740D11DE483EE009F4DD6 /* RefreshTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTipView.swift; sourceTree = "<group>"; };
+		AD090F371DE889EE007850B0 /* TrafficRestrictionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionTableViewController.swift; sourceTree = "<group>"; };
+		AD090F411DE89855007850B0 /* CarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarHelper.swift; sourceTree = "<group>"; };
+		AD0DC36C1DD56E77005B3E37 /* FZXQJW_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZXQJW_0.TTF; sourceTree = "<group>"; };
+		AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvViewController.swift; sourceTree = "<group>"; };
+		AD1613201DDB170F00EB53F0 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		AD1613291DDB212E00EB53F0 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherContentViewController.swift; sourceTree = "<group>"; };
+		AD16132D1DDB620300EB53F0 /* WeatherContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
+		AD16132F1DDB71A200EB53F0 /* MainWeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
+		AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		AD29533D1DD02B8D009465C6 /* ShowApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowApiRequest.swift; sourceTree = "<group>"; };
+		AD29533F1DD02B9A009465C6 /* ShowApiRequest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShowApiRequest-Bridging-Header.h"; path = "LifeKit/ShowApiRequest-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryResult.swift; sourceTree = "<group>"; };
+		AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryRootClass.swift; sourceTree = "<group>"; };
+		AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryShowapiResBody.swift; sourceTree = "<group>"; };
+		AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryResult.swift; sourceTree = "<group>"; };
+		AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryRootClass.swift; sourceTree = "<group>"; };
+		AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryShowapiResBody.swift; sourceTree = "<group>"; };
+		AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryResult.swift; sourceTree = "<group>"; };
+		AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryRootClass.swift; sourceTree = "<group>"; };
+		AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryShowapiResBody.swift; sourceTree = "<group>"; };
+		AD2953551DD0578A009465C6 /* LotteryTypeShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTypeShowapiResBody.swift; sourceTree = "<group>"; };
+		AD2953561DD0578A009465C6 /* LotteryTypeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTypeResult.swift; sourceTree = "<group>"; };
+		AD2953571DD0578A009465C6 /* LotteryTypeRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTypeRootClass.swift; sourceTree = "<group>"; };
+		AD2BA4A31DBE486C00F41E69 /* LifeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2BA4A61DBE486C00F41E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD2BA4AD1DBE486C00F41E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD2BA4B01DBE486C00F41E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD2BA4B21DBE486C00F41E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2BA4B71DBE486C00F41E69 /* LifeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2BA4BB1DBE486C00F41E69 /* LifeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeKitTests.swift; sourceTree = "<group>"; };
+		AD2BA4BD1DBE486C00F41E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2BA4C21DBE486C00F41E69 /* LifeKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2BA4C61DBE486C00F41E69 /* LifeKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeKitUITests.swift; sourceTree = "<group>"; };
+		AD2BA4C81DBE486C00F41E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2BA4E41DBE486C00F41E69 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AD2BA4E61DBE486C00F41E69 /* LifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
+		AD2BA4E81DBE486C00F41E69 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
+		AD2BA4EE1DBE486C00F41E69 /* LifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeView.swift; sourceTree = "<group>"; };
+		AD37E2121DCADA240072C2A4 /* LotteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryView.swift; sourceTree = "<group>"; };
+		AD37E2141DCADD4B0072C2A4 /* WeiZhangView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiZhangView.swift; sourceTree = "<group>"; };
+		AD37E2171DCAE0940072C2A4 /* WeiZhangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiZhangViewController.swift; sourceTree = "<group>"; };
+		AD37E2191DCAE5F90072C2A4 /* AqiDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AqiDetail.swift; sourceTree = "<group>"; };
+		AD37E21A1DCAE5F90072C2A4 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		AD37E21B1DCAE5F90072C2A4 /* F1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F1.swift; sourceTree = "<group>"; };
+		AD37E21D1DCAE5F90072C2A4 /* Now.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Now.swift; sourceTree = "<group>"; };
+		AD37E21E1DCAE5F90072C2A4 /* WeatherRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRootClass.swift; sourceTree = "<group>"; };
+		AD37E21F1DCAE5F90072C2A4 /* WeatherShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherShowapiResBody.swift; sourceTree = "<group>"; };
+		AD3A73E81DE8401F00FF2922 /* TrafficRestrictionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionTableViewCell.swift; sourceTree = "<group>"; };
+		AD5098D01DEC1253009413D1 /* OilPriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilPriceTableViewController.swift; sourceTree = "<group>"; };
+		AD6565FC1DD8226E00979BF1 /* CODE LIGHT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CODE LIGHT.OTF"; sourceTree = "<group>"; };
+		AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiData.swift; sourceTree = "<group>"; };
+		AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiRootClass.swift; sourceTree = "<group>"; };
+		AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiShowapiResBody.swift; sourceTree = "<group>"; };
+		AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPages.swift; sourceTree = "<group>"; };
+		AD7BA7FF1DE67DBD00A67510 /* YunShiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YunShiTableViewCell.swift; sourceTree = "<group>"; };
+		AD94267F1DEE7BE6006D975D /* HuiLvHQList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQList.swift; sourceTree = "<group>"; };
+		AD9426801DEE7BE6006D975D /* HuiLvHQRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQRootClass.swift; sourceTree = "<group>"; };
+		AD9426811DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQShowapiResBody.swift; sourceTree = "<group>"; };
+		AD9426821DEE7BE6006D975D /* HuiLvRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvRootClass.swift; sourceTree = "<group>"; };
+		AD9426831DEE7BE6006D975D /* HuiLvShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvShowapiResBody.swift; sourceTree = "<group>"; };
+		AD9426931DEEA17D006D975D /* HuiLvCalcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvCalcView.swift; sourceTree = "<group>"; };
+		AD9B0D641DC9A8E0004EEFB6 /* CarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		ADA94DC71DD171730093D049 /* ConstellationBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationBox.swift; sourceTree = "<group>"; };
+		ADA94DD91DD1B14C0093D049 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		ADA94DDA1DD1B14C0093D049 /* ConstellationRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationRootClass.swift; sourceTree = "<group>"; };
+		ADA94DDB1DD1B14C0093D049 /* ConstellationShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationShowapiResBody.swift; sourceTree = "<group>"; };
+		ADAE75171DD0925000725A9D /* WeatherBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBox.swift; sourceTree = "<group>"; };
+		ADB9022E1DE1CE9E001CF7F1 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		ADB9022F1DE1CE9E001CF7F1 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
+		ADB902331DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCityChoose_CurrentCity.h; sourceTree = "<group>"; };
+		ADB902341DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCityChoose_CurrentCity.m; sourceTree = "<group>"; };
+		ADB902351DE1CED3001CF7F1 /* EMCityChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCityChoose.h; sourceTree = "<group>"; };
+		ADB902361DE1CED3001CF7F1 /* EMCityChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCityChoose.m; sourceTree = "<group>"; };
+		ADB902371DE1CED3001CF7F1 /* EMcitydict_S.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EMcitydict_S.plist; sourceTree = "<group>"; };
+		ADB902381DE1CED3001CF7F1 /* EMcitydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EMcitydict.plist; sourceTree = "<group>"; };
+		ADB902391DE1CED3001CF7F1 /* EMCurrentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCurrentCell.h; sourceTree = "<group>"; };
+		ADB9023A1DE1CED3001CF7F1 /* EMCurrentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCurrentCell.m; sourceTree = "<group>"; };
+		ADB9023B1DE1CED3001CF7F1 /* EMHotCitysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHotCitysCell.h; sourceTree = "<group>"; };
+		ADB9023C1DE1CED3001CF7F1 /* EMHotCitysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHotCitysCell.m; sourceTree = "<group>"; };
+		ADB9023D1DE1CED3001CF7F1 /* EMSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSearchCell.h; sourceTree = "<group>"; };
+		ADB9023E1DE1CED3001CF7F1 /* EMSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSearchCell.m; sourceTree = "<group>"; };
+		ADB902481DE1D0C2001CF7F1 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		ADB902491DE1D0C2001CF7F1 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		ADB9024A1DE1D0C2001CF7F1 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		ADB9024B1DE1D0C2001CF7F1 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		ADB9024C1DE1D0C2001CF7F1 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		ADB9024D1DE1D0C2001CF7F1 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		ADB9024E1DE1D0C2001CF7F1 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		ADB9024F1DE1D0C2001CF7F1 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		ADB902501DE1D0C2001CF7F1 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		ADB902511DE1D0C2001CF7F1 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		ADB902521DE1D0C2001CF7F1 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		ADB902531DE1D0C2001CF7F1 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationViewController.swift; sourceTree = "<group>"; };
+		ADC3B2AB1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		ADC5AE7E1DC9B247006730B4 /* TrainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+		ADCD6AD71DDECEAE00BB154A /* LuckForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckForm.swift; sourceTree = "<group>"; };
+		ADCD6AE01DDEDD6600BB154A /* LuckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckTableViewCell.swift; sourceTree = "<group>"; };
+		ADD9DAC51DE5DC78005A2EDF /* GuiRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiRenTableViewCell.swift; sourceTree = "<group>"; };
+		ADDD0B051DE72100005D10BE /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		ADE886EA1DEDA4350086F2CF /* KuaiDiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiViewController.swift; sourceTree = "<group>"; };
+		ADE94EE61DCC6CD500F98A58 /* LifeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeHelper.swift; sourceTree = "<group>"; };
+		ADE94EE81DCC6F0D00F98A58 /* TrafficRestrictionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionData.swift; sourceTree = "<group>"; };
+		ADE94EE91DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionRootClass.swift; sourceTree = "<group>"; };
+		ADE94EEA1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionShowapiResBody.swift; sourceTree = "<group>"; };
+		ADE94EEF1DCC6F6800F98A58 /* OilPriceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilPriceList.swift; sourceTree = "<group>"; };
+		ADE94EF01DCC6F6800F98A58 /* OilPriceRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilPriceRootClass.swift; sourceTree = "<group>"; };
+		ADE94EF11DCC6F6800F98A58 /* OilPriceShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilPriceShowapiResBody.swift; sourceTree = "<group>"; };
+		ADE94EF61DCC6FB600F98A58 /* TrainTicketInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTicketInfoData.swift; sourceTree = "<group>"; };
+		ADE94EF71DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTicketPrinceRootClass.swift; sourceTree = "<group>"; };
+		ADE94EF81DCC6FB600F98A58 /* TrainTicketPrinceSeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTicketPrinceSeat.swift; sourceTree = "<group>"; };
+		ADE94EF91DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTicketInfoShowapiResBody.swift; sourceTree = "<group>"; };
+		ADE94EFA1DCC6FB600F98A58 /* SeatInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatInfo.swift; sourceTree = "<group>"; };
+		ADE94F021DCC700C00F98A58 /* TrainTimeListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTimeListData.swift; sourceTree = "<group>"; };
+		ADE94F031DCC700C00F98A58 /* TrainTimeListRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTimeListRootClass.swift; sourceTree = "<group>"; };
+		ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTimeListShowapiResBody.swift; sourceTree = "<group>"; };
+		ADE94F091DCC7C8600F98A58 /* LotteryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryHelper.swift; sourceTree = "<group>"; };
+		ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainHelper.swift; sourceTree = "<group>"; };
+		ADFE265A1DDC642C00CBA61F /* WeatherDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
+		ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibByMrOwl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD2BA4A01DBE486C00F41E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2953371DD029C1009465C6 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4B41DBE486C00F41E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4BF1DBE486C00F41E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD0740DB1DE483F6009F4DD6 /* RefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				AD0740D01DE483ED009F4DD6 /* RefreshControl.swift */,
+				AD0740D11DE483EE009F4DD6 /* RefreshTipView.swift */,
+			);
+			name = RefreshControl;
+			sourceTree = "<group>";
+		};
+		AD29531F1DD029AD009465C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD29532A1DD029AD009465C6 /* Alamofire.framework */,
+				AD29532C1DD029AD009465C6 /* Alamofire iOS Tests.xctest */,
+				AD29532E1DD029AD009465C6 /* Alamofire.framework */,
+				AD2953301DD029AD009465C6 /* Alamofire OSX Tests.xctest */,
+				AD2953321DD029AD009465C6 /* Alamofire.framework */,
+				AD2953341DD029AD009465C6 /* Alamofire tvOS Tests.xctest */,
+				AD2953361DD029AD009465C6 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD29533C1DD029DF009465C6 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				ADB902471DE1D0A9001CF7F1 /* SnapKit */,
+				ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */,
+				AD6C4B8B1DD9BD4A0084C291 /* Control */,
+				ADB902461DE1D09F001CF7F1 /* Font */,
+				AD29533D1DD02B8D009465C6 /* ShowApiRequest.swift */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		AD2953461DD052F9009465C6 /* NewestLottery */ = {
+			isa = PBXGroup;
+			children = (
+				AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */,
+				AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */,
+				AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */,
+			);
+			name = NewestLottery;
+			sourceTree = "<group>";
+		};
+		AD29534D1DD05484009465C6 /* MutileLottery */ = {
+			isa = PBXGroup;
+			children = (
+				AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */,
+				AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */,
+				AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */,
+			);
+			name = MutileLottery;
+			sourceTree = "<group>";
+		};
+		AD2953541DD054B3009465C6 /* SingleLottery */ = {
+			isa = PBXGroup;
+			children = (
+				AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */,
+				AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */,
+				AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */,
+			);
+			name = SingleLottery;
+			sourceTree = "<group>";
+		};
+		AD29535B1DD05792009465C6 /* LotteryType */ = {
+			isa = PBXGroup;
+			children = (
+				AD2953551DD0578A009465C6 /* LotteryTypeShowapiResBody.swift */,
+				AD2953561DD0578A009465C6 /* LotteryTypeResult.swift */,
+				AD2953571DD0578A009465C6 /* LotteryTypeRootClass.swift */,
+			);
+			name = LotteryType;
+			sourceTree = "<group>";
+		};
+		AD2BA49A1DBE486C00F41E69 = {
+			isa = PBXGroup;
+			children = (
+				AD29533F1DD02B9A009465C6 /* ShowApiRequest-Bridging-Header.h */,
+				AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */,
+				AD2BA4A51DBE486C00F41E69 /* LifeKit */,
+				AD2BA4BA1DBE486C00F41E69 /* LifeKitTests */,
+				AD2BA4C51DBE486C00F41E69 /* LifeKitUITests */,
+				AD2BA4A41DBE486C00F41E69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD2BA4A41DBE486C00F41E69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4A31DBE486C00F41E69 /* LifeKit.app */,
+				AD2BA4B71DBE486C00F41E69 /* LifeKitTests.xctest */,
+				AD2BA4C21DBE486C00F41E69 /* LifeKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD2BA4A51DBE486C00F41E69 /* LifeKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD29533C1DD029DF009465C6 /* Extra */,
+				AD2BA4D71DBE486C00F41E69 /* Lottery */,
+				AD2BA4D61DBE486C00F41E69 /* Train */,
+				AD2BA4D51DBE486C00F41E69 /* Car */,
+				AD2BA4D41DBE486C00F41E69 /* Life */,
+				AD2BA4A61DBE486C00F41E69 /* AppDelegate.swift */,
+				AD2BA4E41DBE486C00F41E69 /* Config.swift */,
+				AD2BA4AD1DBE486C00F41E69 /* Assets.xcassets */,
+				AD2BA4AF1DBE486C00F41E69 /* LaunchScreen.storyboard */,
+				AD2BA4B21DBE486C00F41E69 /* Info.plist */,
+			);
+			path = LifeKit;
+			sourceTree = "<group>";
+		};
+		AD2BA4BA1DBE486C00F41E69 /* LifeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4BB1DBE486C00F41E69 /* LifeKitTests.swift */,
+				AD2BA4BD1DBE486C00F41E69 /* Info.plist */,
+			);
+			path = LifeKitTests;
+			sourceTree = "<group>";
+		};
+		AD2BA4C51DBE486C00F41E69 /* LifeKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4C61DBE486C00F41E69 /* LifeKitUITests.swift */,
+				AD2BA4C81DBE486C00F41E69 /* Info.plist */,
+			);
+			path = LifeKitUITests;
+			sourceTree = "<group>";
+		};
+		AD2BA4D41DBE486C00F41E69 /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4E11DBE486C00F41E69 /* M */,
+				AD2BA4E21DBE486C00F41E69 /* V */,
+				AD2BA4E31DBE486C00F41E69 /* C */,
+			);
+			name = Life;
+			sourceTree = "<group>";
+		};
+		AD2BA4D51DBE486C00F41E69 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4E01DBE486C00F41E69 /* M */,
+				AD2BA4DF1DBE486C00F41E69 /* V */,
+				AD2BA4DE1DBE486C00F41E69 /* C */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		AD2BA4D61DBE486C00F41E69 /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4DB1DBE486C00F41E69 /* M */,
+				AD2BA4DC1DBE486C00F41E69 /* V */,
+				AD2BA4DD1DBE486C00F41E69 /* C */,
+			);
+			name = Train;
+			sourceTree = "<group>";
+		};
+		AD2BA4D71DBE486C00F41E69 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4D91DBE486C00F41E69 /* M */,
+				AD2BA4D81DBE486C00F41E69 /* V */,
+				AD2BA4DA1DBE486C00F41E69 /* C */,
+			);
+			name = Lottery;
+			sourceTree = "<group>";
+		};
+		AD2BA4D81DBE486C00F41E69 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				AD37E2121DCADA240072C2A4 /* LotteryView.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		AD2BA4D91DBE486C00F41E69 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				AD29535B1DD05792009465C6 /* LotteryType */,
+				AD2953541DD054B3009465C6 /* SingleLottery */,
+				AD29534D1DD05484009465C6 /* MutileLottery */,
+				AD2953461DD052F9009465C6 /* NewestLottery */,
+				ADE94F091DCC7C8600F98A58 /* LotteryHelper.swift */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		AD2BA4DA1DBE486C00F41E69 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		AD2BA4DB1DBE486C00F41E69 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */,
+				ADE94F081DCC701200F98A58 /* TrainTimeList */,
+				ADE94F011DCC6FE600F98A58 /* TrainTicketInfo */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		AD2BA4DC1DBE486C00F41E69 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5AE7E1DC9B247006730B4 /* TrainView.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		AD2BA4DD1DBE486C00F41E69 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		AD2BA4DE1DBE486C00F41E69 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4E81DBE486C00F41E69 /* CarViewController.swift */,
+				AD37E2171DCAE0940072C2A4 /* WeiZhangViewController.swift */,
+				AD090F371DE889EE007850B0 /* TrafficRestrictionTableViewController.swift */,
+				AD5098D01DEC1253009413D1 /* OilPriceTableViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		AD2BA4DF1DBE486C00F41E69 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A73E81DE8401F00FF2922 /* TrafficRestrictionTableViewCell.swift */,
+				AD9B0D641DC9A8E0004EEFB6 /* CarView.swift */,
+				AD37E2141DCADD4B0072C2A4 /* WeiZhangView.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		AD2BA4E01DBE486C00F41E69 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94EF51DCC6F6D00F98A58 /* OilPrice */,
+				ADE94EEE1DCC6F1C00F98A58 /* TrafficRestriction */,
+				AD090F411DE89855007850B0 /* CarHelper.swift */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		AD2BA4E11DBE486C00F41E69 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				AD9426921DEE7F37006D975D /* HuiLv */,
+				AD6B9A881DED83B600A82C5B /* KuaiDi */,
+				ADA94DDF1DD1B1500093D049 /* Constellation */,
+				AD37E2271DCAE6060072C2A4 /* WeatherClass */,
+				ADE94EE61DCC6CD500F98A58 /* LifeHelper.swift */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		AD2BA4E21DBE486C00F41E69 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4EE1DBE486C00F41E69 /* LifeView.swift */,
+				ADAE75171DD0925000725A9D /* WeatherBox.swift */,
+				ADA94DC71DD171730093D049 /* ConstellationBox.swift */,
+				ADFE26651DDC73DC00CBA61F /* Weather */,
+				ADD9DAC41DE5DC0C005A2EDF /* Constellation */,
+				AD9426931DEEA17D006D975D /* HuiLvCalcView.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		AD2BA4E31DBE486C00F41E69 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA4E61DBE486C00F41E69 /* LifeViewController.swift */,
+				AD1613291DDB212E00EB53F0 /* WeatherViewController.swift */,
+				AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */,
+				ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */,
+				ADE886EA1DEDA4350086F2CF /* KuaiDiViewController.swift */,
+				AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		AD37E2271DCAE6060072C2A4 /* WeatherClass */ = {
+			isa = PBXGroup;
+			children = (
+				AD37E2191DCAE5F90072C2A4 /* AqiDetail.swift */,
+				AD37E21A1DCAE5F90072C2A4 /* CityInfo.swift */,
+				AD37E21B1DCAE5F90072C2A4 /* F1.swift */,
+				AD37E21D1DCAE5F90072C2A4 /* Now.swift */,
+				AD37E21E1DCAE5F90072C2A4 /* WeatherRootClass.swift */,
+				AD37E21F1DCAE5F90072C2A4 /* WeatherShowapiResBody.swift */,
+			);
+			name = WeatherClass;
+			sourceTree = "<group>";
+		};
+		AD6B9A881DED83B600A82C5B /* KuaiDi */ = {
+			isa = PBXGroup;
+			children = (
+				AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */,
+				AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */,
+				AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */,
+			);
+			name = KuaiDi;
+			sourceTree = "<group>";
+		};
+		AD6C4B8B1DD9BD4A0084C291 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				ADB902321DE1CEB4001CF7F1 /* EMCityChoose */,
+				AD0740DB1DE483F6009F4DD6 /* RefreshControl */,
+				AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		AD9426901DEE7ED1006D975D /* HangQing */ = {
+			isa = PBXGroup;
+			children = (
+				AD94267F1DEE7BE6006D975D /* HuiLvHQList.swift */,
+				AD9426801DEE7BE6006D975D /* HuiLvHQRootClass.swift */,
+				AD9426811DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift */,
+			);
+			name = HangQing;
+			sourceTree = "<group>";
+		};
+		AD9426911DEE7EE3006D975D /* Calc */ = {
+			isa = PBXGroup;
+			children = (
+				AD9426821DEE7BE6006D975D /* HuiLvRootClass.swift */,
+				AD9426831DEE7BE6006D975D /* HuiLvShowapiResBody.swift */,
+			);
+			name = Calc;
+			sourceTree = "<group>";
+		};
+		AD9426921DEE7F37006D975D /* HuiLv */ = {
+			isa = PBXGroup;
+			children = (
+				AD9426901DEE7ED1006D975D /* HangQing */,
+				AD9426911DEE7EE3006D975D /* Calc */,
+			);
+			name = HuiLv;
+			sourceTree = "<group>";
+		};
+		ADA94DDF1DD1B1500093D049 /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+				ADA94DD91DD1B14C0093D049 /* Day.swift */,
+				ADA94DDA1DD1B14C0093D049 /* ConstellationRootClass.swift */,
+				ADA94DDB1DD1B14C0093D049 /* ConstellationShowapiResBody.swift */,
+			);
+			name = Constellation;
+			sourceTree = "<group>";
+		};
+		ADB902311DE1CEA6001CF7F1 /* ChineseToPinyin */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9022E1DE1CE9E001CF7F1 /* ChineseToPinyin.h */,
+				ADB9022F1DE1CE9E001CF7F1 /* ChineseToPinyin.m */,
+			);
+			name = ChineseToPinyin;
+			sourceTree = "<group>";
+		};
+		ADB902321DE1CEB4001CF7F1 /* EMCityChoose */ = {
+			isa = PBXGroup;
+			children = (
+				ADB902311DE1CEA6001CF7F1 /* ChineseToPinyin */,
+				ADB902331DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.h */,
+				ADB902341DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m */,
+				ADB902351DE1CED3001CF7F1 /* EMCityChoose.h */,
+				ADB902361DE1CED3001CF7F1 /* EMCityChoose.m */,
+				ADB902371DE1CED3001CF7F1 /* EMcitydict_S.plist */,
+				ADB902381DE1CED3001CF7F1 /* EMcitydict.plist */,
+				ADB902391DE1CED3001CF7F1 /* EMCurrentCell.h */,
+				ADB9023A1DE1CED3001CF7F1 /* EMCurrentCell.m */,
+				ADB9023B1DE1CED3001CF7F1 /* EMHotCitysCell.h */,
+				ADB9023C1DE1CED3001CF7F1 /* EMHotCitysCell.m */,
+				ADB9023D1DE1CED3001CF7F1 /* EMSearchCell.h */,
+				ADB9023E1DE1CED3001CF7F1 /* EMSearchCell.m */,
+			);
+			name = EMCityChoose;
+			sourceTree = "<group>";
+		};
+		ADB902461DE1D09F001CF7F1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AD6565FC1DD8226E00979BF1 /* CODE LIGHT.OTF */,
+				AD0DC36C1DD56E77005B3E37 /* FZXQJW_0.TTF */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		ADB902471DE1D0A9001CF7F1 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				ADB902481DE1D0C2001CF7F1 /* Constraint.swift */,
+				ADB902491DE1D0C2001CF7F1 /* ConstraintAttributes.swift */,
+				ADB9024A1DE1D0C2001CF7F1 /* ConstraintDescription.swift */,
+				ADB9024B1DE1D0C2001CF7F1 /* ConstraintItem.swift */,
+				ADB9024C1DE1D0C2001CF7F1 /* ConstraintMaker.swift */,
+				ADB9024D1DE1D0C2001CF7F1 /* ConstraintRelation.swift */,
+				ADB9024E1DE1D0C2001CF7F1 /* Debugging.swift */,
+				ADB9024F1DE1D0C2001CF7F1 /* EdgeInsets.swift */,
+				ADB902501DE1D0C2001CF7F1 /* LayoutConstraint.swift */,
+				ADB902511DE1D0C2001CF7F1 /* SnapKit.swift */,
+				ADB902521DE1D0C2001CF7F1 /* View+SnapKit.swift */,
+				ADB902531DE1D0C2001CF7F1 /* ViewController+SnapKit.swift */,
+			);
+			name = SnapKit;
+			sourceTree = "<group>";
+		};
+		ADD9DAC41DE5DC0C005A2EDF /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+				ADC3B2AB1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift */,
+				ADCD6AD71DDECEAE00BB154A /* LuckForm.swift */,
+				ADDD0B051DE72100005D10BE /* TextViewTableViewCell.swift */,
+				ADCD6AE01DDEDD6600BB154A /* LuckTableViewCell.swift */,
+				ADD9DAC51DE5DC78005A2EDF /* GuiRenTableViewCell.swift */,
+				AD7BA7FF1DE67DBD00A67510 /* YunShiTableViewCell.swift */,
+			);
+			name = Constellation;
+			sourceTree = "<group>";
+		};
+		ADE94EEE1DCC6F1C00F98A58 /* TrafficRestriction */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94EE81DCC6F0D00F98A58 /* TrafficRestrictionData.swift */,
+				ADE94EE91DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift */,
+				ADE94EEA1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift */,
+			);
+			name = TrafficRestriction;
+			sourceTree = "<group>";
+		};
+		ADE94EF51DCC6F6D00F98A58 /* OilPrice */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94EEF1DCC6F6800F98A58 /* OilPriceList.swift */,
+				ADE94EF01DCC6F6800F98A58 /* OilPriceRootClass.swift */,
+				ADE94EF11DCC6F6800F98A58 /* OilPriceShowapiResBody.swift */,
+			);
+			name = OilPrice;
+			sourceTree = "<group>";
+		};
+		ADE94F011DCC6FE600F98A58 /* TrainTicketInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94EF61DCC6FB600F98A58 /* TrainTicketInfoData.swift */,
+				ADE94EF71DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift */,
+				ADE94EF81DCC6FB600F98A58 /* TrainTicketPrinceSeat.swift */,
+				ADE94EF91DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift */,
+				ADE94EFA1DCC6FB600F98A58 /* SeatInfo.swift */,
+			);
+			name = TrainTicketInfo;
+			sourceTree = "<group>";
+		};
+		ADE94F081DCC701200F98A58 /* TrainTimeList */ = {
+			isa = PBXGroup;
+			children = (
+				ADE94F021DCC700C00F98A58 /* TrainTimeListData.swift */,
+				ADE94F031DCC700C00F98A58 /* TrainTimeListRootClass.swift */,
+				ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */,
+			);
+			name = TrainTimeList;
+			sourceTree = "<group>";
+		};
+		ADFE26651DDC73DC00CBA61F /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				AD1613201DDB170F00EB53F0 /* WeatherView.swift */,
+				ADFE26661DDC73DC00CBA61F /* Content */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		ADFE26661DDC73DC00CBA61F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD16132D1DDB620300EB53F0 /* WeatherContentView.swift */,
+				ADFE26671DDC73DC00CBA61F /* Component */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		ADFE26671DDC73DC00CBA61F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AD16132F1DDB71A200EB53F0 /* MainWeatherView.swift */,
+				ADFE265A1DDC642C00CBA61F /* WeatherDataView.swift */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD2BA4A21DBE486C00F41E69 /* LifeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD2BA4CB1DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKit" */;
+			buildPhases = (
+				AD2BA49F1DBE486C00F41E69 /* Sources */,
+				AD2BA4A01DBE486C00F41E69 /* Frameworks */,
+				AD2BA4A11DBE486C00F41E69 /* Resources */,
+				AD29533B1DD029C1009465C6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD29533A1DD029C1009465C6 /* PBXTargetDependency */,
+			);
+			name = LifeKit;
+			productName = LifeKit;
+			productReference = AD2BA4A31DBE486C00F41E69 /* LifeKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD2BA4B61DBE486C00F41E69 /* LifeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD2BA4CE1DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKitTests" */;
+			buildPhases = (
+				AD2BA4B31DBE486C00F41E69 /* Sources */,
+				AD2BA4B41DBE486C00F41E69 /* Frameworks */,
+				AD2BA4B51DBE486C00F41E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD2BA4B91DBE486C00F41E69 /* PBXTargetDependency */,
+			);
+			name = LifeKitTests;
+			productName = LifeKitTests;
+			productReference = AD2BA4B71DBE486C00F41E69 /* LifeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD2BA4C11DBE486C00F41E69 /* LifeKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD2BA4D11DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKitUITests" */;
+			buildPhases = (
+				AD2BA4BE1DBE486C00F41E69 /* Sources */,
+				AD2BA4BF1DBE486C00F41E69 /* Frameworks */,
+				AD2BA4C01DBE486C00F41E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD2BA4C41DBE486C00F41E69 /* PBXTargetDependency */,
+			);
+			name = LifeKitUITests;
+			productName = LifeKitUITests;
+			productReference = AD2BA4C21DBE486C00F41E69 /* LifeKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD2BA49B1DBE486C00F41E69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张文博";
+				TargetAttributes = {
+					AD2BA4A21DBE486C00F41E69 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ND5L59J5ZY;
+					};
+					AD2BA4B61DBE486C00F41E69 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AD2BA4A21DBE486C00F41E69;
+					};
+					AD2BA4C11DBE486C00F41E69 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AD2BA4A21DBE486C00F41E69;
+					};
+				};
+			};
+			buildConfigurationList = AD2BA49E1DBE486C00F41E69 /* Build configuration list for PBXProject "LifeKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD2BA49A1DBE486C00F41E69;
+			productRefGroup = AD2BA4A41DBE486C00F41E69 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AD29531F1DD029AD009465C6 /* Products */;
+					ProjectRef = AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AD2BA4A21DBE486C00F41E69 /* LifeKit */,
+				AD2BA4B61DBE486C00F41E69 /* LifeKitTests */,
+				AD2BA4C11DBE486C00F41E69 /* LifeKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AD29532A1DD029AD009465C6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = AD2953291DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD29532C1DD029AD009465C6 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = AD29532B1DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD29532E1DD029AD009465C6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = AD29532D1DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD2953301DD029AD009465C6 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = AD29532F1DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD2953321DD029AD009465C6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = AD2953311DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD2953341DD029AD009465C6 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = AD2953331DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD2953361DD029AD009465C6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = AD2953351DD029AD009465C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD2BA4A11DBE486C00F41E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6565FD1DD8226E00979BF1 /* CODE LIGHT.OTF in Resources */,
+				AD6565F41DD81B3300979BF1 /* FZXQJW_0.TTF in Resources */,
+				AD2BA4B11DBE486C00F41E69 /* LaunchScreen.storyboard in Resources */,
+				AD2BA4AE1DBE486C00F41E69 /* Assets.xcassets in Resources */,
+				ADB902411DE1CED3001CF7F1 /* EMcitydict_S.plist in Resources */,
+				ADB902421DE1CED3001CF7F1 /* EMcitydict.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4B51DBE486C00F41E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4C01DBE486C00F41E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD2BA49F1DBE486C00F41E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB902541DE1D0C2001CF7F1 /* Constraint.swift in Sources */,
+				ADB9025B1DE1D0C2001CF7F1 /* EdgeInsets.swift in Sources */,
+				ADCD6AE11DDEDD6600BB154A /* LuckTableViewCell.swift in Sources */,
+				ADB902451DE1CED3001CF7F1 /* EMSearchCell.m in Sources */,
+				AD7BA8001DE67DBD00A67510 /* YunShiTableViewCell.swift in Sources */,
+				AD2953581DD0578A009465C6 /* LotteryTypeShowapiResBody.swift in Sources */,
+				AD3A73E91DE8402000FF2922 /* TrafficRestrictionTableViewCell.swift in Sources */,
+				ADCD6AD81DDECEAE00BB154A /* LuckForm.swift in Sources */,
+				AD2BA4A71DBE486C00F41E69 /* AppDelegate.swift in Sources */,
+				ADE94EFB1DCC6FB600F98A58 /* TrainTicketInfoData.swift in Sources */,
+				ADDD0B061DE72100005D10BE /* TextViewTableViewCell.swift in Sources */,
+				ADB902431DE1CED3001CF7F1 /* EMCurrentCell.m in Sources */,
+				ADC5AE7F1DC9B247006730B4 /* TrainView.swift in Sources */,
+				AD6B9A7E1DED83B600A82C5B /* KuaiDiData.swift in Sources */,
+				AD9426851DEE7BE6006D975D /* HuiLvHQRootClass.swift in Sources */,
+				AD2953521DD054B0009465C6 /* SingleLotteryRootClass.swift in Sources */,
+				AD9B0D651DC9A8E0004EEFB6 /* CarView.swift in Sources */,
+				ADFE265B1DDC642C00CBA61F /* WeatherDataView.swift in Sources */,
+				AD0740D31DE483EE009F4DD6 /* RefreshTipView.swift in Sources */,
+				ADB9023F1DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m in Sources */,
+				AD16132E1DDB620300EB53F0 /* WeatherContentView.swift in Sources */,
+				AD125FD41DEFB9CE0026E9C4 /* HuiLvViewController.swift in Sources */,
+				ADB902441DE1CED3001CF7F1 /* EMHotCitysCell.m in Sources */,
+				ADC3B2AC1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift in Sources */,
+				ADA94DDC1DD1B14C0093D049 /* Day.swift in Sources */,
+				AD9426941DEEA17D006D975D /* HuiLvCalcView.swift in Sources */,
+				AD1613301DDB71A200EB53F0 /* MainWeatherView.swift in Sources */,
+				AD2953591DD0578A009465C6 /* LotteryTypeResult.swift in Sources */,
+				ADB9025C1DE1D0C2001CF7F1 /* LayoutConstraint.swift in Sources */,
+				ADA94DC81DD171730093D049 /* ConstellationBox.swift in Sources */,
+				ADE94F071DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift in Sources */,
+				ADB902401DE1CED3001CF7F1 /* EMCityChoose.m in Sources */,
+				AD2BA4E51DBE486C00F41E69 /* Config.swift in Sources */,
+				ADB902561DE1D0C2001CF7F1 /* ConstraintDescription.swift in Sources */,
+				ADB902591DE1D0C2001CF7F1 /* ConstraintRelation.swift in Sources */,
+				AD16132C1DDB50B000EB53F0 /* WeatherContentViewController.swift in Sources */,
+				AD090F381DE889EE007850B0 /* TrafficRestrictionTableViewController.swift in Sources */,
+				ADB902581DE1D0C2001CF7F1 /* ConstraintMaker.swift in Sources */,
+				ADE94F061DCC700C00F98A58 /* TrainTimeListRootClass.swift in Sources */,
+				AD37E2211DCAE5F90072C2A4 /* CityInfo.swift in Sources */,
+				AD29534B1DD0547B009465C6 /* MutileLotteryRootClass.swift in Sources */,
+				AD37E2131DCADA240072C2A4 /* LotteryView.swift in Sources */,
+				AD6B9A801DED83B600A82C5B /* KuaiDiShowapiResBody.swift in Sources */,
+				ADE94EE71DCC6CD500F98A58 /* LifeHelper.swift in Sources */,
+				ADE94F0C1DCC7C8600F98A58 /* TrainHelper.swift in Sources */,
+				AD29534C1DD0547B009465C6 /* MutileLotteryShowapiResBody.swift in Sources */,
+				ADB9025F1DE1D0C2001CF7F1 /* ViewController+SnapKit.swift in Sources */,
+				AD5098D11DEC1253009413D1 /* OilPriceTableViewController.swift in Sources */,
+				AD2BA4EB1DBE486C00F41E69 /* TrainViewController.swift in Sources */,
+				ADE94EFE1DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift in Sources */,
+				AD9426881DEE7BE6006D975D /* HuiLvShowapiResBody.swift in Sources */,
+				ADB902301DE1CE9E001CF7F1 /* ChineseToPinyin.m in Sources */,
+				AD2BA4E71DBE486C00F41E69 /* LifeViewController.swift in Sources */,
+				AD37E2221DCAE5F90072C2A4 /* F1.swift in Sources */,
+				AD37E2201DCAE5F90072C2A4 /* AqiDetail.swift in Sources */,
+				AD9426841DEE7BE6006D975D /* HuiLvHQList.swift in Sources */,
+				AD37E2181DCAE0940072C2A4 /* WeiZhangViewController.swift in Sources */,
+				ADC3B2A81DDD579A00203AAF /* ConstellationViewController.swift in Sources */,
+				AD6C4B8F1DD9F8DB0084C291 /* SwiftPages.swift in Sources */,
+				AD37E2241DCAE5F90072C2A4 /* Now.swift in Sources */,
+				ADB9025D1DE1D0C2001CF7F1 /* SnapKit.swift in Sources */,
+				ADE94EFF1DCC6FB600F98A58 /* SeatInfo.swift in Sources */,
+				AD29535A1DD0578A009465C6 /* LotteryTypeRootClass.swift in Sources */,
+				ADB9025A1DE1D0C2001CF7F1 /* Debugging.swift in Sources */,
+				AD0740D21DE483EE009F4DD6 /* RefreshControl.swift in Sources */,
+				AD9426861DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift in Sources */,
+				ADE94EF31DCC6F6800F98A58 /* OilPriceRootClass.swift in Sources */,
+				ADA94DDE1DD1B14C0093D049 /* ConstellationShowapiResBody.swift in Sources */,
+				ADE94EFD1DCC6FB600F98A58 /* TrainTicketPrinceSeat.swift in Sources */,
+				AD2BA4EF1DBE486C00F41E69 /* LifeView.swift in Sources */,
+				AD2953531DD054B0009465C6 /* SingleLotteryShowapiResBody.swift in Sources */,
+				AD2953441DD052F4009465C6 /* NewestLotteryRootClass.swift in Sources */,
+				AD2953451DD052F4009465C6 /* NewestLotteryShowapiResBody.swift in Sources */,
+				AD2BA4ED1DBE486C00F41E69 /* LotteryViewController.swift in Sources */,
+				AD29534A1DD0547B009465C6 /* MutileLotteryResult.swift in Sources */,
+				ADE94F051DCC700C00F98A58 /* TrainTimeListData.swift in Sources */,
+				AD9426871DEE7BE6006D975D /* HuiLvRootClass.swift in Sources */,
+				ADB902551DE1D0C2001CF7F1 /* ConstraintAttributes.swift in Sources */,
+				ADAE75181DD0925000725A9D /* WeatherBox.swift in Sources */,
+				ADE94EF21DCC6F6800F98A58 /* OilPriceList.swift in Sources */,
+				AD090F421DE89855007850B0 /* CarHelper.swift in Sources */,
+				AD2BA4E91DBE486C00F41E69 /* CarViewController.swift in Sources */,
+				ADE886EB1DEDA4350086F2CF /* KuaiDiViewController.swift in Sources */,
+				ADE94EFC1DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift in Sources */,
+				ADB902571DE1D0C2001CF7F1 /* ConstraintItem.swift in Sources */,
+				ADD9DAC61DE5DC78005A2EDF /* GuiRenTableViewCell.swift in Sources */,
+				AD2953431DD052F4009465C6 /* NewestLotteryResult.swift in Sources */,
+				ADA94DDD1DD1B14C0093D049 /* ConstellationRootClass.swift in Sources */,
+				AD29533E1DD02B8D009465C6 /* ShowApiRequest.swift in Sources */,
+				ADE94EEC1DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift in Sources */,
+				AD1613211DDB170F00EB53F0 /* WeatherView.swift in Sources */,
+				ADE94EF41DCC6F6800F98A58 /* OilPriceShowapiResBody.swift in Sources */,
+				ADE94EEB1DCC6F0D00F98A58 /* TrafficRestrictionData.swift in Sources */,
+				ADE94F0B1DCC7C8600F98A58 /* LotteryHelper.swift in Sources */,
+				AD37E2151DCADD4B0072C2A4 /* WeiZhangView.swift in Sources */,
+				AD16132A1DDB212E00EB53F0 /* WeatherViewController.swift in Sources */,
+				AD2953511DD054B0009465C6 /* SingleLotteryResult.swift in Sources */,
+				AD6B9A7F1DED83B600A82C5B /* KuaiDiRootClass.swift in Sources */,
+				AD37E2261DCAE5F90072C2A4 /* WeatherShowapiResBody.swift in Sources */,
+				ADFE26641DDC73DC00CBA61F /* LibByMrOwl.swift in Sources */,
+				ADE94EED1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift in Sources */,
+				AD37E2251DCAE5F90072C2A4 /* WeatherRootClass.swift in Sources */,
+				ADB9025E1DE1D0C2001CF7F1 /* View+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4B31DBE486C00F41E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2BA4BC1DBE486C00F41E69 /* LifeKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD2BA4BE1DBE486C00F41E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2BA4C71DBE486C00F41E69 /* LifeKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD29533A1DD029C1009465C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = AD2953391DD029C1009465C6 /* PBXContainerItemProxy */;
+		};
+		AD2BA4B91DBE486C00F41E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD2BA4A21DBE486C00F41E69 /* LifeKit */;
+			targetProxy = AD2BA4B81DBE486C00F41E69 /* PBXContainerItemProxy */;
+		};
+		AD2BA4C41DBE486C00F41E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD2BA4A21DBE486C00F41E69 /* LifeKit */;
+			targetProxy = AD2BA4C31DBE486C00F41E69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD2BA4AF1DBE486C00F41E69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD2BA4B01DBE486C00F41E69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD2BA4C91DBE486C00F41E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD2BA4CA1DBE486C00F41E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD2BA4CC1DBE486C00F41E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LifeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/ShowApiRequest-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		AD2BA4CD1DBE486C00F41E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LifeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/ShowApiRequest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AD2BA4CF1DBE486C00F41E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeKit.app/LifeKit";
+			};
+			name = Debug;
+		};
+		AD2BA4D01DBE486C00F41E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeKit.app/LifeKit";
+			};
+			name = Release;
+		};
+		AD2BA4D21DBE486C00F41E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeKit;
+			};
+			name = Debug;
+		};
+		AD2BA4D31DBE486C00F41E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrOwl.LifeKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD2BA49E1DBE486C00F41E69 /* Build configuration list for PBXProject "LifeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2BA4C91DBE486C00F41E69 /* Debug */,
+				AD2BA4CA1DBE486C00F41E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2BA4CB1DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2BA4CC1DBE486C00F41E69 /* Debug */,
+				AD2BA4CD1DBE486C00F41E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2BA4CE1DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2BA4CF1DBE486C00F41E69 /* Debug */,
+				AD2BA4D01DBE486C00F41E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2BA4D11DBE486C00F41E69 /* Build configuration list for PBXNativeTarget "LifeKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2BA4D21DBE486C00F41E69 /* Debug */,
+				AD2BA4D31DBE486C00F41E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD2BA49B1DBE486C00F41E69 /* Project object */;
+}
