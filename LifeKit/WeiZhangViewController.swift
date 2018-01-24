@@ -16,6 +16,7 @@ class WeiZhangViewController: UIViewController,UIWebViewDelegate {
     }
 
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -30,8 +31,8 @@ class WeiZhangViewController: UIViewController,UIWebViewDelegate {
     
     
     func setup(){
-        // 设置左右item
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "TOP", style: .Plain, target: self, action: #selector(WeiZhangViewController.rightItemClick))
+//        // 设置左右item
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "TOP", style: .Plain, target: self, action: #selector(WeiZhangViewController.rightItemClick))
         // 设置titleView
         let titleButton = UIButton()
         titleButton.setTitle("违章查询", forState: .Normal)

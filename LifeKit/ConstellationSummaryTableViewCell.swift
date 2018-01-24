@@ -13,9 +13,14 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
     var ConstellationInfo:ConstellationRootClass?{
         didSet{
             if let info = ConstellationInfo{
+                
                 self.imgview_constellation.image = UIImage(named: (info.showapiResBody.star)!)
                 self.label_constellation.text = LifeHelper.PinYinToWenZi_Consellation(info.showapiResBody.star)
                 self.label_date.text = info.showapiResBody.day.time
+                
+                let name = "\(info.showapiResBody.day.summaryStar)star"
+                let img_luck = UIImage(named: name)
+                self.imgView_luck.image = img_luck
             }
         }
     }
@@ -34,6 +39,7 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
     
     func setUI(){
         self.backgroundColor = UIColor.lightTextColor()
+        contentView.addSubview(imgview_background)
         contentView.addSubview(imgview_constellation)
         contentView.addSubview(label_constellation)
         contentView.addSubview(label_date)
@@ -62,6 +68,9 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
 //            make.top.equalTo(smallIconView.snp_bottom).offset(8)
 //        }
         
+        imgview_background.snp_makeConstraints { (make) in
+            make.edges.equalTo(contentView)
+        }
         
         imgview_constellation.snp_makeConstraints { (make) in
             make.top.equalTo(contentView).offset(30)
@@ -101,10 +110,18 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
         return imgView
     }()
     
+    let imgview_background:UIImageView = {
+        let imgview = UIImageView()
+        imgview.image = UIImage(named: "bkg_constellation")
+        imgview.contentMode = .ScaleAspectFill
+        return imgview
+    }()
+    
     let label_constellation:UILabel = {
        let label = UILabel()
         label.textAlignment = .Center
         label.font = UIFont(name: AppInfo.Font_CODE_LIGHT, size: 25)
+        label.textColor = UIColor.whiteColor()
         return label
     }()
     
@@ -112,6 +129,7 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textAlignment = .Center
         label.font = UIFont(name: AppInfo.Font_CODE_LIGHT, size: 15)
+        label.textColor = UIColor.whiteColor()
         return label
     }()
     
@@ -119,6 +137,7 @@ class ConstellationSummaryTableViewCell: UITableViewCell {
         let label = UILabel()
         label.text = "综合运势："
         label.textAlignment = .Center
+        label.textColor = UIColor.whiteColor()
         return label
     }()
     

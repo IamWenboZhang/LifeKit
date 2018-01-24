@@ -16,8 +16,14 @@ class TrafficRestrictionTableViewController: UITableViewController,EMCityChooseD
         didSet{
             if let str = city{
                 CarHelper.GetTrafficRestrictionInfo(str, callback: { (TrafficRestrictionInfo) in
-                    self.trafficRestrictionArray = TrafficRestrictionInfo.showapiResBody.data
-                    self.tableView.reloadData()
+                    if(TrafficRestrictionInfo.showapiResBody.retCode == "0"){
+                        self.trafficRestrictionArray = TrafficRestrictionInfo.showapiResBody.data
+                        self.tableView.reloadData()
+                    }
+                    else{
+                        let alert = UIAlertView(title: nil, message:TrafficRestrictionInfo.showapiResBody.msg , delegate: self, cancelButtonTitle: "确定")
+                        alert.show()
+                    }
                 })
             }
         }
@@ -35,6 +41,7 @@ class TrafficRestrictionTableViewController: UITableViewController,EMCityChooseD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.edgesForExtendedLayout = .Bottom
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(TrafficRestrictionTableViewController.setCity))
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -43,7 +50,7 @@ class TrafficRestrictionTableViewController: UITableViewController,EMCityChooseD
         refreshControl = RefreshControl(frame: CGRectZero)
         refreshControl?.addTarget(self, action: #selector(TrafficRestrictionTableViewController.getData), forControlEvents: .ValueChanged)
 
-        self.city = AppInfo.DEFAULT_LOCATION
+        self.city = "北京"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -95,22 +102,38 @@ class TrafficRestrictionTableViewController: UITableViewController,EMCityChooseD
         }
     }
 
+//    func setCity(){
+//        // 注意设置默认值得时候, 必须设置完整, 不能进行省略 ["四川", "成都", "成华区"] 比如不能设置为["四川", "成都"]
+//        // ["北京", "通州"] 不能设置为["北京"]
+//        UsefulPickerView.showCitiesPicker("省市区选择", defaultSelectedValues: ["北京", "通州"]) {[unowned self] (selectedIndexs, selectedValues) in
+//            // 处理数据
+//            let combinedString = selectedValues.reduce("", combine: { (result, value) -> String in
+//                result + " " + value
+//            })
+//            if selectedIndexs[2] == 0{
+//                self.city = selectedValues[1]
+//            }else{
+//                self.city = selectedValues[2]
+//            }
+//        }
+//    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        var cell = tableView.dequeueReusableCellWithIdentifier(TrafficRestritionReugesIdentifier, forIndexPath: indexPath) as? TrafficRestrictionTableViewCell
 //        let cell  = TrafficRestrictionTableViewCell(style: .Default, reuseIdentifier: TrafficRestritionReugesIdentifier)
-        var cell = self.tableView.dequeueReusableCellWithIdentifier(TrafficRestritionReugesIdentifier) as? TrafficRestrictionTableViewCell
-        cell  = TrafficRestrictionTableViewCell(style: .Default, reuseIdentifier: TrafficRestritionReugesIdentifier)
+//        var cell = self.tableView.dequeueReusableCellWithIdentifier(TrafficRestritionReugesIdentifier) as? TrafficRestrictionTableViewCell
+        let cell  = TrafficRestrictionTableViewCell(style: .Default, reuseIdentifier: TrafficRestritionReugesIdentifier)
         var i = 0
         while(i<self.trafficRestrictionArray?.count){
-            cell!.setData(self.trafficRestrictionArray![i])
+            cell.setData(self.trafficRestrictionArray![i])
             i = i + 1
         }
         
-        cell!.selectionStyle = .None
+        cell.selectionStyle = .None
         
         // Configure the cell...
 
-        return cell!
+        return cell
     }
     
     func stopDisplay(aCityChooseViewController: EMCityChoose!) {

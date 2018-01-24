@@ -21,20 +21,25 @@ class LifeViewController: UIViewController{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBarHidden = true
+        if AppInfo.DEFAULT_LOCATION != nil{
+            LifeHelper.GetWeather(AppInfo.DEFAULT_LOCATION!) { (weatherdata) in
+                self.lifeview.weatherbox.setWeatherView(weatherdata)
+                self.lifeview.weatherbox.Button.addTarget(self, action: #selector(LifeViewController.weatherClick), forControlEvents: .TouchUpInside)
+            }
+        }
+        
+        if AppInfo.DEFAULT_CONSTELLATION != nil{
+            LifeHelper.GetConstellationLuck(AppInfo.DEFAULT_CONSTELLATION!) { (constellationdata) in
+                self.lifeview.constellationbox.setConstellationView(constellationdata)
+                self.lifeview.constellationbox.Button.addTarget(self, action: #selector(LifeViewController.constellationClick), forControlEvents: .TouchUpInside)
+            }
+
+        }
+        
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-       
-        LifeHelper.GetWeather(AppInfo.DEFAULT_LOCATION) { (weatherdata) in
-            self.lifeview.weatherbox.setWeatherView(weatherdata)
-            self.lifeview.weatherbox.Button.addTarget(self, action: #selector(LifeViewController.weatherClick), forControlEvents: .TouchUpInside)
-        }
-        
-        LifeHelper.GetConstellationLuck(AppInfo.DEFAULT_CONSTELLATION) { (constellationdata) in
-            self.lifeview.constellationbox.setConstellationView(constellationdata)
-            self.lifeview.constellationbox.Button.addTarget(self, action: #selector(LifeViewController.constellationClick), forControlEvents: .TouchUpInside)
-        }
+        super.viewDidLoad()        
         self.lifeview.wuliubutton.addTarget(self, action:  #selector(LifeViewController.kuaidiClick), forControlEvents: .TouchUpInside)
         self.view.addSubview(lifeview)
     }

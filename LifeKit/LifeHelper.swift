@@ -23,15 +23,30 @@ public class LifeHelper: NSObject {
         })
     }
     
-    static func GetKuaiDi(kuaidino:String,callback:(kuaididata:KuaiDiRootClass)->Void){
-        let request = ShowApiRequest(url: "https://route.showapi.com/880-1", appId: AppInfo.appId, secret: AppInfo.secret)
-        request.post(["nu":kuaidino],  callback: { (data) -> Void in
-            let kuaidiinfo = KuaiDiRootClass(fromDictionary: data)
+    static func GetKuaiDi(com:String = "auto",kuaidino:String,callback:(kuaididata:KDRootClass)->Void){
+        let request = ShowApiRequest(url: "https://route.showapi.com/64-19", appId: AppInfo.appId, secret: AppInfo.secret)
+        request.post(["com":com,"nu":kuaidino],  callback: { (data) -> Void in
+            let kuaidiinfo = KDRootClass(fromDictionary: data)
             if(kuaidiinfo.showapiResBody != nil)
             {
                 if(kuaidiinfo.showapiResCode == 0)
                 {
                     callback(kuaididata: kuaidiinfo)
+                }
+            }
+        })
+    }
+    
+    
+    static func GetKuaiDiCom(comName:String,callback:(comData:KDComRootClass)->Void){
+        let request = ShowApiRequest(url: "https://route.showapi.com/64-20", appId: AppInfo.appId, secret: AppInfo.secret)
+        request.post(["expName":comName],  callback: { (data) -> Void in
+            let cominfo = KDComRootClass(fromDictionary: data)
+            if(cominfo.showapiResBody != nil)
+            {
+                if(cominfo.showapiResCode == 0)
+                {
+                    callback(comData: cominfo)
                 }
             }
         })
@@ -52,7 +67,7 @@ public class LifeHelper: NSObject {
     }
     
     static func GetHuiLvCalc(fromCode:String,toCode:String,money:String,callback:(calcdata:HuiLvRootClass)->Void){
-        let request = ShowApiRequest(url: "https://route.showapi.com/880-1", appId: AppInfo.appId, secret: AppInfo.secret)
+        let request = ShowApiRequest(url: "https://route.showapi.com/105-31", appId: AppInfo.appId, secret: AppInfo.secret)
         request.post(["fromCode":fromCode,"toCode":toCode,"money":money],  callback: { (data) -> Void in
             let calcinfo = HuiLvRootClass(fromDictionary: data)
             if(calcinfo.showapiResBody != nil)

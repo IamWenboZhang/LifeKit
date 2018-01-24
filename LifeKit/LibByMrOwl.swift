@@ -51,7 +51,29 @@ class LibByMrOwl: NSObject {
         }
         return result
     }
-   
+    
+    //本地缓存偏好设置
+    static func setDefault(key:String,value:AnyObject?){
+        if value == nil{
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(key)
+        }else{
+            NSUserDefaults.standardUserDefaults().setObject(value, forKey: key)
+            NSUserDefaults.standardUserDefaults().synchronize() //同步
+        }
+    }
+    
+    //删除
+    static func removeUserDefault(key:String?){
+        if key != nil{
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(key!)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    //获取设置
+    static func getDefault(key:String) ->AnyObject?{
+        return NSUserDefaults.standardUserDefaults().valueForKey(key)
+    }
 }
 
 extension String{

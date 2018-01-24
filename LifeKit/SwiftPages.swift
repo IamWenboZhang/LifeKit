@@ -47,8 +47,8 @@ public class SwiftPages: UIView {
     private var distanceToBottom: CGFloat = 0
     
     // Color variables
-    private var animatedBarColor = UIColor(red: 28/255, green: 95/255, blue: 185/255, alpha: 1)
-    private var topBarBackground = UIColor.whiteColor()
+    private var animatedBarColor = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
+    private var topBarBackground = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
     private var buttonsTextColor = UIColor.grayColor()
     private var containerViewBackground = UIColor.whiteColor()
     
@@ -151,7 +151,7 @@ public class SwiftPages: UIView {
             if self.aeroEffectInTopBar {
                 // Create the blurred visual effect
                 // You can choose between ExtraLight, Light and Dark
-                self.topBar.backgroundColor = UIColor.clearColor()
+                self.topBar.backgroundColor = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
                 
                 let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
                 self.blurView = UIVisualEffectView(effect: blurEffect)
@@ -174,7 +174,7 @@ public class SwiftPages: UIView {
                     let frame = CGRect(x: buttonsXPosition, y: 0, width: self.containerView.frame.size.width / CGFloat(pageCount), height: self.topBarHeight)
                     
                     let barButton = UIButton(frame: frame)
-                    barButton.backgroundColor = UIColor.clearColor()
+                    barButton.backgroundColor = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
                     barButton.imageView?.contentMode = .ScaleAspectFit
                     barButton.setImage(image, forState: .Normal)
                     barButton.tag = index
@@ -191,7 +191,7 @@ public class SwiftPages: UIView {
                     let frame = CGRect(x: buttonsXPosition, y: 0, width: self.containerView.frame.size.width / CGFloat(pageCount), height: self.topBarHeight)
                     
                     let barButton = UIButton(frame: frame)
-                    barButton.backgroundColor = UIColor.clearColor()
+                    barButton.backgroundColor = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
                     barButton.titleLabel!.font = self.buttonsTextFontAndSize
                     barButton.setTitle(title, forState: .Normal)
                     barButton.setTitleColor(self.buttonsTextColor, forState: .Normal)
@@ -209,7 +209,7 @@ public class SwiftPages: UIView {
                     let frame = CGRect(x: buttonsXPosition, y: 0, width: self.containerView.frame.size.width / CGFloat(pageCount), height: self.topBarHeight)
                     
                     let barButton = UIButton(frame: frame)
-                    barButton.backgroundColor = UIColor.clearColor()
+                    barButton.backgroundColor = UIColor(red: 0.75, green: 0.83, blue: 0.93, alpha: 1)
                     barButton.setImage(tuple.img, forState: .Normal)
                     barButton.setTitle(tuple.title, forState: .Normal)
                     barButton.imageView?.bounds.size = CGSize(width: 10, height: 10)

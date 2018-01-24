@@ -23,6 +23,17 @@ public class LotteryHelper: NSObject {
         })
     }
     
+    static func GetNewestLotteryList(callback:(newstlotterydata:NewestLotteryRootClass)->Void){
+        let request = ShowApiRequest(url: "https://route.showapi.com/44-1", appId: AppInfo.appId, secret: AppInfo.secret)
+        request.post(callback: { (data) -> Void in
+            let newstlotteryinfo = NewestLotteryRootClass(fromDictionary: data)
+            if(newstlotteryinfo.showapiResBody != nil)
+            {
+                callback(newstlotterydata: newstlotteryinfo)
+            }
+        })
+    }
+    
     //获取多期开奖情况（参数：code：彩票类型 callback：成功获取数据后的操作）
     static func GetMutileLotteryList(code:String, callback:(mutilelotterydata:MutileLotteryRootClass)->Void){
         let request = ShowApiRequest(url: "https://route.showapi.com/44-2", appId: AppInfo.appId, secret: AppInfo.secret)

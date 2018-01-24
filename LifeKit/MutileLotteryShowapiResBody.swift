@@ -9,7 +9,7 @@ import Foundation
 
 class MutileLotteryShowapiResBody{
 
-	var result : [MutileLotteryResult]!
+	var result : [LotteryResult]!
 	var retCode : Int!
 
 
@@ -17,10 +17,10 @@ class MutileLotteryShowapiResBody{
 	 * 用字典来初始化一个实例并设置各个属性值
 	 */
 	init(fromDictionary dictionary: NSDictionary){
-		result = [MutileLotteryResult]()
+		result = [LotteryResult]()
 		if let resultArray = dictionary["result"] as? [NSDictionary]{
 			for dic in resultArray{
-				let value = MutileLotteryResult(fromDictionary: dic)
+				let value = LotteryResult(fromDictionary: dic)
 				result.append(value)
 			}
 		}

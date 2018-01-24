@@ -9,7 +9,7 @@ import Foundation
 
 class NewestLotteryShowapiResBody{
 
-	var result : [NewestLotteryResult]!
+	var result : [LotteryResult]!
 	var retCode : Int!
 
 
@@ -17,10 +17,10 @@ class NewestLotteryShowapiResBody{
 	 * 用字典来初始化一个实例并设置各个属性值
 	 */
 	init(fromDictionary dictionary: NSDictionary){
-		result = [NewestLotteryResult]()
+		result = [LotteryResult]()
 		if let resultArray = dictionary["result"] as? [NSDictionary]{
 			for dic in resultArray{
-				let value = NewestLotteryResult(fromDictionary: dic)
+				let value = LotteryResult(fromDictionary: dic)
 				result.append(value)
 			}
 		}

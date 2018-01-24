@@ -9,7 +9,7 @@ import Foundation
 
 class SingleLotteryShowapiResBody{
 
-	var result : SingleLotteryResult!
+	var result : LotteryResult!
 	var retCode : Int!
 
 
@@ -18,7 +18,7 @@ class SingleLotteryShowapiResBody{
 	 */
 	init(fromDictionary dictionary: NSDictionary){
 		if let resultData = dictionary["result"] as? NSDictionary{
-			result = SingleLotteryResult(fromDictionary: resultData)
+			result = LotteryResult(fromDictionary: resultData)
 		}
 		retCode = dictionary["ret_code"] as? Int
 	}

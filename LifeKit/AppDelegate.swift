@@ -18,23 +18,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT))
         let tabbarController = UITabBarController()
+//        tabbarController.tabBar.isCustomizing()
+//        tabbarController.tabBar.barTintColor = UIColor.clearColor()
         
         let lotteryController = UINavigationController(rootViewController: LotteryViewController())
-        let trainController = UINavigationController(rootViewController: TrainViewController())
+        let trainController = UINavigationController(rootViewController: QueryViewController())
         let carController = UINavigationController(rootViewController: CarViewController())
         let lifeController = UINavigationController(rootViewController: LifeViewController())
-        tabbarController.viewControllers = [lifeController,carController,trainController,lotteryController]
+        let settingController = UINavigationController(rootViewController: SettingTableViewController())
+        tabbarController.viewControllers = [lifeController,carController,settingController,trainController,lotteryController]
         
         let tabbarItem1 = UITabBarItem(title: "生活", image: UIImage(named: "life"), tag: 0)
-        let tabbarItem2 = UITabBarItem(title: "汽车", image: UIImage(named: "car"), tag: 0)
-        tabbarItem2.image?.imageWithRenderingMode(UIImageRenderingMode.Automatic)
-        let tabbarItem3 = UITabBarItem(title: "彩票", image: UIImage(named: "lottery"), tag: 0)
-        let tabbarItem4 = UITabBarItem(title: "火车", image: UIImage(named: "train"), tag: 0)
+        let tabbarItem2 = UITabBarItem(title: "汽车", image: UIImage(named: "car"), tag: 1)
+        
+        let tabbarItem3 = UITabBarItem()
+        let image = UIImage(named: "gear")?.imageWithRenderingMode(.AlwaysOriginal)
+        tabbarItem3.image = image
+        
+        let tabbarItem4 = UITabBarItem(title: "彩票", image: UIImage(named: "lottery"), tag: 3)
+        let tabbarItem5 = UITabBarItem(title: "娱乐", image: UIImage(named: "train"), tag: 4)
         
         
         
-        lotteryController.tabBarItem = tabbarItem3
-        trainController.tabBarItem = tabbarItem4
+        lotteryController.tabBarItem = tabbarItem4
+        trainController.tabBarItem = tabbarItem5
+        settingController.tabBarItem = tabbarItem3
         lifeController.tabBarItem = tabbarItem1
         carController.tabBarItem = tabbarItem2
         

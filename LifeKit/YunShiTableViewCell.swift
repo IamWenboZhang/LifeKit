@@ -16,16 +16,27 @@ class YunShiTableViewCell: UITableViewCell {
     
     var textview_YunShi = UITextView()
     
+//    let imgview_background:UIImageView = {
+//        let imgview = UIImageView()
+//        imgview.image = UIImage(named: "bkg_constellation")
+//        imgview.contentMode = .ScaleAspectFit
+//        return imgview
+//    }()
+//
+    
     func setData(img:UIImage,text:String,title:String){
         self.label_Yunshi.text = title
         self.imgView_YunShi.image = img
         self.textview_YunShi.text = text
     }
     
+    
     func setUI(){
         textview_YunShi.editable = false
         backgroundColor = UIColor.lightGrayColor()
+        
         contentView.backgroundColor = UIColor.whiteColor()
+//        contentView.addSubview(imgview_background)
         contentView.addSubview(label_Yunshi)
         contentView.addSubview(imgView_YunShi)
         contentView.addSubview(textview_YunShi)
@@ -33,6 +44,10 @@ class YunShiTableViewCell: UITableViewCell {
         contentView.snp_makeConstraints { (make) in
             make.edges.equalTo(UIEdgeInsetsMake(5, 5, 0, -5))
         }
+//        
+//        imgview_background.snp_makeConstraints { (make) in
+//            make.left.top.right.bottom.equalTo(self)
+//        }
         
         label_Yunshi.snp_makeConstraints { (make) in
             make.right.equalTo(contentView.snp_centerX).offset(-5)

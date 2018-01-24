@@ -36,6 +36,14 @@ class LuckTableViewCell: UITableViewCell {
         let view = LuckForm()
         return view
     }()
+//    
+//    let imgview_background:UIImageView = {
+//        let imgview = UIImageView()
+//        imgview.image = UIImage(named: "bkg_constellation")
+//        imgview.contentMode = .ScaleAspectFill
+//        return imgview
+//    }()
+
     
     var form2 : LuckForm = {
         let view = LuckForm()
@@ -53,12 +61,17 @@ class LuckTableViewCell: UITableViewCell {
         
         backgroundColor = UIColor.lightGrayColor()
         contentView.backgroundColor = UIColor.whiteColor()
+//        contentView.addSubview(imgview_background)
         contentView.addSubview(form1)
         contentView.addSubview(form2)
 
         contentView.snp_makeConstraints { (make) in
             make.edges.equalTo(UIEdgeInsetsMake(5, 5, 0, -5))
         }
+        
+//        imgview_background.snp_makeConstraints { (make) in
+//            make.edges.equalTo(contentView)
+//        }
 
         form1.snp_makeConstraints { (make) in
             make.top.equalTo(contentView)

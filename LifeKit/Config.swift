@@ -9,8 +9,34 @@
 import UIKit
 
 class AppInfo:NSObject{
-    static var DEFAULT_LOCATION = "上海"
-    static var DEFAULT_CONSTELLATION = "金牛座"
+    
+    private static var _location:String?
+    
+    private static var _constellation:String?
+    
+    static var DEFAULT_LOCATION:String?{
+        get{
+            let v = LibByMrOwl.getDefault("MyLocation") as? String
+            _location = v
+            return _location
+        }
+        set{
+            LibByMrOwl.setDefault("MyLocation", value: newValue)
+            _location = newValue
+        }
+    }
+    static var DEFAULT_CONSTELLATION:String?{
+        get{
+            let v = LibByMrOwl.getDefault("MyConstellation") as? String
+            _constellation = v
+            return _constellation
+        }
+        set{
+            LibByMrOwl.setDefault("MyConstellation", value: newValue)
+            _constellation = newValue
+        }
+    }
+
     static var appId = "13446"
     static var secret = "f0ceb5f58f9c4c5c92f2df77c2080351"
     static let Font_CODE_LIGHT = "CODE LIGHT"

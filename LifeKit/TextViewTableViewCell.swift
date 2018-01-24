@@ -24,10 +24,19 @@ class TextViewTableViewCell: UITableViewCell {
         return view
     }()
     
+//    let imgview_background:UIImageView = {
+//        let imgview = UIImageView()
+//        imgview.image = UIImage(named: "bkg_constellation")
+//        imgview.contentMode = .ScaleAspectFill
+//        return imgview
+//    }()
+
+    
     func setUI(){
         backgroundColor = UIColor.lightGrayColor()
         contentView.backgroundColor = UIColor.whiteColor()
         
+//        contentView.addSubview(imgview_background)
         contentView.addSubview(headLabel)
         contentView.addSubview(textView)
         
@@ -35,6 +44,10 @@ class TextViewTableViewCell: UITableViewCell {
             make.edges.equalTo(UIEdgeInsetsMake(5, 5, -2.5, -5))
         }
 
+//        imgview_background.snp_makeConstraints { (make) in
+//            make.left.top.right.bottom.equalTo(contentView)
+//        }
+        
         headLabel.snp_makeConstraints { (make) in
             make.top.left.equalTo(contentView).offset(3)
             make.height.equalTo(15)

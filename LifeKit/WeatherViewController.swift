@@ -19,7 +19,15 @@ class WeatherViewController: UIViewController,EMCityChooseDelegate {
         didSet{
             if (city != nil){
                 LifeHelper.GetWeather(city!, callback: { (weatherdata) in
-                    self.weatherInfo = weatherdata
+//                    self.weatherInfo = weatherdata
+                    if(weatherdata.showapiResBody.cityInfo != nil){
+                        self.navigationItem.rightBarButtonItem?.title = self.city
+                        self.self.weatherInfo = weatherdata
+                    }
+                    else{
+                        let alert = UIAlertView(title: "换个城市试试", message:"未找到 \(self.city!) 的天气信息" , delegate: self, cancelButtonTitle: "确定")
+                        alert.show()
+                    }
                 })
             }
         }
@@ -45,13 +53,15 @@ class WeatherViewController: UIViewController,EMCityChooseDelegate {
                 let img3 = LibByMrOwl.getUIImageByUrl(weatherdata.showapiResBody.f2.dayWeatherPic)!.reSizeImage(reSize)
                 let img4 = LibByMrOwl.getUIImageByUrl(weatherdata.showapiResBody.f3.dayWeatherPic)!.reSizeImage(reSize)
 
+                        
                 let tuple2 = (img:img2,title:LifeHelper.intToWeekDayStr(weatherdata.showapiResBody.f1.weekday))
                 let tuple3 = (img:img3,title:LifeHelper.intToWeekDayStr(weatherdata.showapiResBody.f2.weekday))
                 let tuple4 = (img:img4,title:LifeHelper.intToWeekDayStr(weatherdata.showapiResBody.f3.weekday))
                 let tuples = [tuple2,tuple3,tuple4]
-                weatherview.weatherWindow.initializeWithVCsInstanciatedArrayAndButtonImgAndTitleArray(VCs, buttonImgAndTitleArray: tuples)
+            weatherview.weatherWindow.initializeWithVCsInstanciatedArrayAndButtonImgAndTitleArray(VCs, buttonImgAndTitleArray: tuples)
                 weatherview.weatherWindow.setTopBarBackground(UIColor(red: 244/255, green: 164/255, blue: 96/255, alpha: 1.0))
                 weatherview.weatherWindow.setAnimatedBarColor(UIColor(red: 255/255, green: 250/255, blue: 205/255, alpha: 1.0))
+               
                 self.view.addSubview(weatherview)
                 }
             }
@@ -80,23 +90,43 @@ class WeatherViewController: UIViewController,EMCityChooseDelegate {
     }
     
     func setupUI(){
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(WeatherViewController.chooseCity))
+         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.city, style: .Plain, target: self, action: #selector(WeatherViewController.chooseCity))
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(WeatherViewController.chooseCity))
     }
     
+//    func chooseCity(){
+//        //判断城市选择界面是否正在显示
+//        if(!cityChooseVC.isShow){
+//            //初始化城市选择界面
+//            cityChooseVC = EMCityChoose(pointY: 0, buttonTitleCityName: AppInfo.DEFAULT_LOCATION, hotCity: _hotCityArray, cityType: cityListType(rawValue: 1)!, hideSearchBar: false)
+//            //设置代理为自己
+//            cityChooseVC.delegate = self
+//            //添加到父视图上
+//            self.view.addSubview(cityChooseVC.view)
+//        }
+//        else{
+//            cityChooseVC.closeView()
+//        }
+//       
+//    }
+    
     func chooseCity(){
-        //判断城市选择界面是否正在显示
-        if(!cityChooseVC.isShow){
-            //初始化城市选择界面
-            cityChooseVC = EMCityChoose(pointY: 0, buttonTitleCityName: AppInfo.DEFAULT_LOCATION, hotCity: _hotCityArray, cityType: cityListType(rawValue: 1)!, hideSearchBar: false)
-            //设置代理为自己
-            cityChooseVC.delegate = self
-            //添加到父视图上
-            self.view.addSubview(cityChooseVC.view)
+        // 注意设置默认值得时候, 必须设置完整, 不能进行省略 ["四川", "成都", "成华区"] 比如不能设置为["四川", "成都"]
+        // ["北京", "通州"] 不能设置为["北京"]
+        UsefulPickerView.showCitiesPicker("省市区选择", defaultSelectedValues: ["北京", "通州"]) {[unowned self] (selectedIndexs, selectedValues) in
+            // 处理数据
+            let combinedString = selectedValues.reduce("", combine: { (result, value) -> String in
+                result + " " + value
+            })
+            if selectedIndexs[2] == 0{
+                self.city = selectedValues[1]
+            }else{
+                self.city = selectedValues[2]
+            }
+            
+//            self.selectedDataLabel.text = "选中了第\(selectedIndexs)行----选中的数据为\(combinedString)"
+            
         }
-        else{
-            cityChooseVC.closeView()
-        }
-       
     }
     
     //热门城市

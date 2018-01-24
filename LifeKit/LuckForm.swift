@@ -28,6 +28,7 @@ class LuckForm: UIView {
     var dataView:UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
+        label.font = UIFont.systemFontOfSize(12)
         return label
     }()
     

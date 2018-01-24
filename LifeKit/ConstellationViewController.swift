@@ -26,7 +26,6 @@ class ConstellationViewController: UITableViewController {
             if (constellation?.length > 0){
                 LifeHelper.GetConstellationLuck(constellation!, callback: { (constellationdata) in
                     self._constellationData = constellationdata
-                    self.tableView.reloadData()
                 })
             }
         }
@@ -35,6 +34,7 @@ class ConstellationViewController: UITableViewController {
     private var _constellationData : ConstellationRootClass?{
         didSet{
             if let constellationInfo = _constellationData {
+                self.tableView.reloadData()
             }
         }
     }
@@ -53,9 +53,22 @@ class ConstellationViewController: UITableViewController {
         registerCell()
         self.tableView.separatorStyle = .None
         self.tableView.tableFooterView = UIView()
+        setUI()
     }
 
+    func setUI(){
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.constellation, style: .Plain, target: self, action: #selector(ConstellationViewController.chooseConstellation))
+    }
     
+    let constellationArray = ["水瓶座","天蝎座","白羊座","金牛座","双子座","双鱼座","处女座","摩羯座","狮子座","射手座","巨蟹座"]
+    
+    func chooseConstellation(){
+        UsefulPickerView.showSingleColPicker("星座选择", data: constellationArray, defaultSelectedIndex: 5) {[unowned self] (selectedIndex, selectedValue) in
+            self.constellation = selectedValue
+            self.navigationItem.rightBarButtonItem?.title = selectedValue
+//            self.selectedDataLabel.text = "选中了第\(selectedIndex)行----选中的数据为\(selectedValue)"
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -176,27 +189,44 @@ class ConstellationViewController: UITableViewController {
             result = guirencell
             break
         case 4:
-            let img_aiqing = UIImage(named: "car_32px")
-            
-            if(self._constellationData?.showapiResBody.day.loveTxt != nil){
-                let text = (self._constellationData?.showapiResBody.day.loveTxt)!
-                aiqingYunshiCell.setData(img_aiqing!, text: text, title: "爱情指数：")
+            if self._constellationData != nil{
+                let name = "\(self._constellationData!.showapiResBody.day.loveStar)star"
+                let img_aiqing = UIImage(named: name)
+                
+                if(self._constellationData?.showapiResBody.day.loveTxt != nil){
+                    let text = (self._constellationData?.showapiResBody.day.loveTxt)!
+                    if img_aiqing != nil{
+                        aiqingYunshiCell.setData(img_aiqing!, text: text, title: "爱情指数：")
+                    }
+                }
+
             }
             result = aiqingYunshiCell
             break
         case 5:
-            let img_work = UIImage(named: "car_32px")
-             if(self._constellationData?.showapiResBody.day.workTxt != nil){
-                 let text = (self._constellationData?.showapiResBody.day.workTxt)!
-                workYunshiCell.setData(img_work!, text:text, title: "工作指数：")
+            if self._constellationData != nil{
+                let name = "\(self._constellationData!.showapiResBody.day.workStar)star"
+                let img_work = UIImage(named: name)
+                
+                if(self._constellationData?.showapiResBody.day.workTxt != nil){
+                    let text = (self._constellationData?.showapiResBody.day.workTxt)!
+                    if img_work != nil{
+                        workYunshiCell.setData(img_work!, text:text, title: "工作指数：")
+                    }
+                }
             }
             result = workYunshiCell
             break
         case 6:
-            let img_money = UIImage(named: "car_32px")
-            if(self._constellationData?.showapiResBody.day.moneyTxt != nil){
-                let text = (self._constellationData?.showapiResBody.day.moneyTxt)!
-                moneyYunshiCell.setData(img_money!, text: text, title: "财富指数：")
+            if self._constellationData != nil{
+                let name = "\(self._constellationData!.showapiResBody.day.moneyStar)star"
+                let img_money = UIImage(named: name)
+                if(self._constellationData?.showapiResBody.day.moneyTxt != nil){
+                    let text = (self._constellationData?.showapiResBody.day.moneyTxt)!
+                    if img_money != nil{
+                        moneyYunshiCell.setData(img_money!, text: text, title: "财富指数：")
+                    }
+                }
             }
             result = moneyYunshiCell
             break

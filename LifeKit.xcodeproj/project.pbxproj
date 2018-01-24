@@ -12,6 +12,9 @@
 		AD090F381DE889EE007850B0 /* TrafficRestrictionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD090F371DE889EE007850B0 /* TrafficRestrictionTableViewController.swift */; };
 		AD090F421DE89855007850B0 /* CarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD090F411DE89855007850B0 /* CarHelper.swift */; };
 		AD125FD41DEFB9CE0026E9C4 /* HuiLvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */; };
+		AD15E6291E0BA7FD00250CC1 /* queryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD15E6281E0BA7FD00250CC1 /* queryTableViewController.swift */; };
+		AD15E62B1E0BB47500250CC1 /* lotterytypeChooseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD15E62A1E0BB47500250CC1 /* lotterytypeChooseTableViewController.swift */; };
+		AD15E62D1E0BB9DF00250CC1 /* lotteryTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD15E62C1E0BB9DF00250CC1 /* lotteryTypeTableViewCell.swift */; };
 		AD1613211DDB170F00EB53F0 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1613201DDB170F00EB53F0 /* WeatherView.swift */; };
 		AD16132A1DDB212E00EB53F0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1613291DDB212E00EB53F0 /* WeatherViewController.swift */; };
 		AD16132C1DDB50B000EB53F0 /* WeatherContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */; };
@@ -20,13 +23,11 @@
 		AD2953371DD029C1009465C6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD29532A1DD029AD009465C6 /* Alamofire.framework */; };
 		AD2953381DD029C1009465C6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD29532A1DD029AD009465C6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD29533E1DD02B8D009465C6 /* ShowApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29533D1DD02B8D009465C6 /* ShowApiRequest.swift */; };
-		AD2953431DD052F4009465C6 /* NewestLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */; };
+		AD2953431DD052F4009465C6 /* LotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953401DD052F4009465C6 /* LotteryResult.swift */; };
 		AD2953441DD052F4009465C6 /* NewestLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */; };
 		AD2953451DD052F4009465C6 /* NewestLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */; };
-		AD29534A1DD0547B009465C6 /* MutileLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */; };
 		AD29534B1DD0547B009465C6 /* MutileLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */; };
 		AD29534C1DD0547B009465C6 /* MutileLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */; };
-		AD2953511DD054B0009465C6 /* SingleLotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */; };
 		AD2953521DD054B0009465C6 /* SingleLotteryRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */; };
 		AD2953531DD054B0009465C6 /* SingleLotteryShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */; };
 		AD2953581DD0578A009465C6 /* LotteryTypeShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2953551DD0578A009465C6 /* LotteryTypeShowapiResBody.swift */; };
@@ -40,7 +41,7 @@
 		AD2BA4E51DBE486C00F41E69 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E41DBE486C00F41E69 /* Config.swift */; };
 		AD2BA4E71DBE486C00F41E69 /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E61DBE486C00F41E69 /* LifeViewController.swift */; };
 		AD2BA4E91DBE486C00F41E69 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4E81DBE486C00F41E69 /* CarViewController.swift */; };
-		AD2BA4EB1DBE486C00F41E69 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */; };
+		AD2BA4EB1DBE486C00F41E69 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EA1DBE486C00F41E69 /* QueryViewController.swift */; };
 		AD2BA4ED1DBE486C00F41E69 /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */; };
 		AD2BA4EF1DBE486C00F41E69 /* LifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA4EE1DBE486C00F41E69 /* LifeView.swift */; };
 		AD37E2131DCADA240072C2A4 /* LotteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E2121DCADA240072C2A4 /* LotteryView.swift */; };
@@ -53,14 +54,37 @@
 		AD37E2251DCAE5F90072C2A4 /* WeatherRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21E1DCAE5F90072C2A4 /* WeatherRootClass.swift */; };
 		AD37E2261DCAE5F90072C2A4 /* WeatherShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37E21F1DCAE5F90072C2A4 /* WeatherShowapiResBody.swift */; };
 		AD3A73E91DE8402000FF2922 /* TrafficRestrictionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A73E81DE8401F00FF2922 /* TrafficRestrictionTableViewCell.swift */; };
+		AD3BDAF81E02446300CCBEA6 /* PoemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BDAF71E02446300CCBEA6 /* PoemViewController.swift */; };
+		AD3BDB011E02A07B00CCBEA6 /* PoemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BDB001E02A07A00CCBEA6 /* PoemTableViewCell.swift */; };
+		AD3C98CA1EC47CB600F54BF0 /* KDComExpressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C98C71EC47CB600F54BF0 /* KDComExpressList.swift */; };
+		AD3C98CB1EC47CB600F54BF0 /* KDComRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C98C81EC47CB600F54BF0 /* KDComRootClass.swift */; };
+		AD3C98CC1EC47CB600F54BF0 /* KDComShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C98C91EC47CB600F54BF0 /* KDComShowapiResBody.swift */; };
+		AD4B50521DF7F1B6004936B7 /* TitleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B50511DF7F1B6004936B7 /* TitleBtn.swift */; };
+		AD4B505D1DF8061D004936B7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B505C1DF8061D004936B7 /* SettingViewController.swift */; };
 		AD5098D11DEC1253009413D1 /* OilPriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5098D01DEC1253009413D1 /* OilPriceTableViewController.swift */; };
+		AD520AED1DF90471007F924C /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD520AEC1DF90471007F924C /* SettingTableViewController.swift */; };
+		AD5888C71E0A697900F6843C /* LotteryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5888C61E0A697900F6843C /* LotteryTableViewCell.swift */; };
+		AD5888D01E0A76F900F6843C /* newLotteryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5888CF1E0A76F900F6843C /* newLotteryTableViewController.swift */; };
 		AD6565F41DD81B3300979BF1 /* FZXQJW_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AD0DC36C1DD56E77005B3E37 /* FZXQJW_0.TTF */; };
 		AD6565FD1DD8226E00979BF1 /* CODE LIGHT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = AD6565FC1DD8226E00979BF1 /* CODE LIGHT.OTF */; };
-		AD6B9A7E1DED83B600A82C5B /* KuaiDiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */; };
-		AD6B9A7F1DED83B600A82C5B /* KuaiDiRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */; };
-		AD6B9A801DED83B600A82C5B /* KuaiDiShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */; };
+		AD6913261DF578ED0091E424 /* Area.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD6913161DF578ED0091E424 /* Area.plist */; };
+		AD6913271DF578ED0091E424 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD6913171DF578ED0091E424 /* City.plist */; };
+		AD6913281DF578ED0091E424 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6913181DF578ED0091E424 /* Picker.swift */; };
+		AD6913291DF578ED0091E424 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6913191DF578ED0091E424 /* PickerView.swift */; };
+		AD69132A1DF578ED0091E424 /* Province.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD69131A1DF578ED0091E424 /* Province.plist */; };
+		AD69132B1DF578ED0091E424 /* SelectionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69131B1DF578ED0091E424 /* SelectionTextField.swift */; };
+		AD69132C1DF578ED0091E424 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69131C1DF578ED0091E424 /* ToolBarView.swift */; };
+		AD69132D1DF578ED0091E424 /* UsefulPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69131D1DF578ED0091E424 /* UsefulPickerView.swift */; };
 		AD6C4B8F1DD9F8DB0084C291 /* SwiftPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */; };
 		AD7BA8001DE67DBD00A67510 /* YunShiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BA7FF1DE67DBD00A67510 /* YunShiTableViewCell.swift */; };
+		AD8959151DF6969500CE9CDD /* QQLuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8959141DF6969500CE9CDD /* QQLuckViewController.swift */; };
+		AD89591E1DF6975A00CE9CDD /* QQLuckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89591D1DF6975A00CE9CDD /* QQLuckView.swift */; };
+		AD8EE8C81E01925800356D99 /* PoemRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8EE8C61E01925800356D99 /* PoemRootClass.swift */; };
+		AD8EE8C91E01925800356D99 /* PoemShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8EE8C71E01925800356D99 /* PoemShowapiResBody.swift */; };
+		AD8EE8D51E01925800356D99 /* PoemConditionChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8EE8D41E01925800356D99 /* PoemConditionChooseView.swift */; };
+		AD92AD6E1DFAAFA20097879C /* KDData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92AD6B1DFAAFA20097879C /* KDData.swift */; };
+		AD92AD6F1DFAAFA20097879C /* KDRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92AD6C1DFAAFA20097879C /* KDRootClass.swift */; };
+		AD92AD701DFAAFA20097879C /* KDShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92AD6D1DFAAFA20097879C /* KDShowapiResBody.swift */; };
 		AD9426841DEE7BE6006D975D /* HuiLvHQList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94267F1DEE7BE6006D975D /* HuiLvHQList.swift */; };
 		AD9426851DEE7BE6006D975D /* HuiLvHQRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426801DEE7BE6006D975D /* HuiLvHQRootClass.swift */; };
 		AD9426861DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9426811DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift */; };
@@ -95,7 +119,7 @@
 		ADB9025F1DE1D0C2001CF7F1 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB902531DE1D0C2001CF7F1 /* ViewController+SnapKit.swift */; };
 		ADC3B2A81DDD579A00203AAF /* ConstellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */; };
 		ADC3B2AC1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3B2AB1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift */; };
-		ADC5AE7F1DC9B247006730B4 /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AE7E1DC9B247006730B4 /* TrainView.swift */; };
+		ADC5AE7F1DC9B247006730B4 /* QueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AE7E1DC9B247006730B4 /* QueryView.swift */; };
 		ADCD6AD81DDECEAE00BB154A /* LuckForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD6AD71DDECEAE00BB154A /* LuckForm.swift */; };
 		ADCD6AE11DDEDD6600BB154A /* LuckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD6AE01DDEDD6600BB154A /* LuckTableViewCell.swift */; };
 		ADD9DAC61DE5DC78005A2EDF /* GuiRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9DAC51DE5DC78005A2EDF /* GuiRenTableViewCell.swift */; };
@@ -117,7 +141,9 @@
 		ADE94F061DCC700C00F98A58 /* TrainTimeListRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F031DCC700C00F98A58 /* TrainTimeListRootClass.swift */; };
 		ADE94F071DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */; };
 		ADE94F0B1DCC7C8600F98A58 /* LotteryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F091DCC7C8600F98A58 /* LotteryHelper.swift */; };
-		ADE94F0C1DCC7C8600F98A58 /* TrainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */; };
+		ADE94F0C1DCC7C8600F98A58 /* EntertainmentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE94F0A1DCC7C8600F98A58 /* EntertainmentHelper.swift */; };
+		ADED1BAF1DF6BB43004553E5 /* QQLuckRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1BAD1DF6BB43004553E5 /* QQLuckRootClass.swift */; };
+		ADED1BB01DF6BB43004553E5 /* QQLuckShowapiResBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1BAE1DF6BB43004553E5 /* QQLuckShowapiResBody.swift */; };
 		ADFE265B1DDC642C00CBA61F /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE265A1DDC642C00CBA61F /* WeatherDataView.swift */; };
 		ADFE26641DDC73DC00CBA61F /* LibByMrOwl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */; };
 /* End PBXBuildFile section */
@@ -216,6 +242,9 @@
 		AD090F411DE89855007850B0 /* CarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarHelper.swift; sourceTree = "<group>"; };
 		AD0DC36C1DD56E77005B3E37 /* FZXQJW_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZXQJW_0.TTF; sourceTree = "<group>"; };
 		AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvViewController.swift; sourceTree = "<group>"; };
+		AD15E6281E0BA7FD00250CC1 /* queryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queryTableViewController.swift; sourceTree = "<group>"; };
+		AD15E62A1E0BB47500250CC1 /* lotterytypeChooseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lotterytypeChooseTableViewController.swift; sourceTree = "<group>"; };
+		AD15E62C1E0BB9DF00250CC1 /* lotteryTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lotteryTypeTableViewCell.swift; sourceTree = "<group>"; };
 		AD1613201DDB170F00EB53F0 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		AD1613291DDB212E00EB53F0 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherContentViewController.swift; sourceTree = "<group>"; };
@@ -224,13 +253,11 @@
 		AD29531E1DD029AD009465C6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		AD29533D1DD02B8D009465C6 /* ShowApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowApiRequest.swift; sourceTree = "<group>"; };
 		AD29533F1DD02B9A009465C6 /* ShowApiRequest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShowApiRequest-Bridging-Header.h"; path = "LifeKit/ShowApiRequest-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryResult.swift; sourceTree = "<group>"; };
+		AD2953401DD052F4009465C6 /* LotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryResult.swift; sourceTree = "<group>"; };
 		AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryRootClass.swift; sourceTree = "<group>"; };
 		AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewestLotteryShowapiResBody.swift; sourceTree = "<group>"; };
-		AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryResult.swift; sourceTree = "<group>"; };
 		AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryRootClass.swift; sourceTree = "<group>"; };
 		AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutileLotteryShowapiResBody.swift; sourceTree = "<group>"; };
-		AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryResult.swift; sourceTree = "<group>"; };
 		AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryRootClass.swift; sourceTree = "<group>"; };
 		AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLotteryShowapiResBody.swift; sourceTree = "<group>"; };
 		AD2953551DD0578A009465C6 /* LotteryTypeShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTypeShowapiResBody.swift; sourceTree = "<group>"; };
@@ -250,7 +277,7 @@
 		AD2BA4E41DBE486C00F41E69 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		AD2BA4E61DBE486C00F41E69 /* LifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
 		AD2BA4E81DBE486C00F41E69 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
-		AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		AD2BA4EA1DBE486C00F41E69 /* QueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
 		AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		AD2BA4EE1DBE486C00F41E69 /* LifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeView.swift; sourceTree = "<group>"; };
 		AD37E2121DCADA240072C2A4 /* LotteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryView.swift; sourceTree = "<group>"; };
@@ -263,13 +290,36 @@
 		AD37E21E1DCAE5F90072C2A4 /* WeatherRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRootClass.swift; sourceTree = "<group>"; };
 		AD37E21F1DCAE5F90072C2A4 /* WeatherShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherShowapiResBody.swift; sourceTree = "<group>"; };
 		AD3A73E81DE8401F00FF2922 /* TrafficRestrictionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficRestrictionTableViewCell.swift; sourceTree = "<group>"; };
+		AD3BDAF71E02446300CCBEA6 /* PoemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemViewController.swift; sourceTree = "<group>"; };
+		AD3BDB001E02A07A00CCBEA6 /* PoemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemTableViewCell.swift; sourceTree = "<group>"; };
+		AD3C98C71EC47CB600F54BF0 /* KDComExpressList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDComExpressList.swift; sourceTree = "<group>"; };
+		AD3C98C81EC47CB600F54BF0 /* KDComRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDComRootClass.swift; sourceTree = "<group>"; };
+		AD3C98C91EC47CB600F54BF0 /* KDComShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDComShowapiResBody.swift; sourceTree = "<group>"; };
+		AD4B50511DF7F1B6004936B7 /* TitleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBtn.swift; sourceTree = "<group>"; };
+		AD4B505C1DF8061D004936B7 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		AD5098D01DEC1253009413D1 /* OilPriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilPriceTableViewController.swift; sourceTree = "<group>"; };
+		AD520AEC1DF90471007F924C /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		AD5888C61E0A697900F6843C /* LotteryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTableViewCell.swift; sourceTree = "<group>"; };
+		AD5888CF1E0A76F900F6843C /* newLotteryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newLotteryTableViewController.swift; sourceTree = "<group>"; };
 		AD6565FC1DD8226E00979BF1 /* CODE LIGHT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CODE LIGHT.OTF"; sourceTree = "<group>"; };
-		AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiData.swift; sourceTree = "<group>"; };
-		AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiRootClass.swift; sourceTree = "<group>"; };
-		AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuaiDiShowapiResBody.swift; sourceTree = "<group>"; };
+		AD6913161DF578ED0091E424 /* Area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Area.plist; sourceTree = "<group>"; };
+		AD6913171DF578ED0091E424 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
+		AD6913181DF578ED0091E424 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		AD6913191DF578ED0091E424 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		AD69131A1DF578ED0091E424 /* Province.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Province.plist; sourceTree = "<group>"; };
+		AD69131B1DF578ED0091E424 /* SelectionTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTextField.swift; sourceTree = "<group>"; };
+		AD69131C1DF578ED0091E424 /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		AD69131D1DF578ED0091E424 /* UsefulPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsefulPickerView.swift; sourceTree = "<group>"; };
 		AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPages.swift; sourceTree = "<group>"; };
 		AD7BA7FF1DE67DBD00A67510 /* YunShiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YunShiTableViewCell.swift; sourceTree = "<group>"; };
+		AD8959141DF6969500CE9CDD /* QQLuckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLuckViewController.swift; sourceTree = "<group>"; };
+		AD89591D1DF6975A00CE9CDD /* QQLuckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLuckView.swift; sourceTree = "<group>"; };
+		AD8EE8C61E01925800356D99 /* PoemRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemRootClass.swift; sourceTree = "<group>"; };
+		AD8EE8C71E01925800356D99 /* PoemShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemShowapiResBody.swift; sourceTree = "<group>"; };
+		AD8EE8D41E01925800356D99 /* PoemConditionChooseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemConditionChooseView.swift; sourceTree = "<group>"; };
+		AD92AD6B1DFAAFA20097879C /* KDData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDData.swift; sourceTree = "<group>"; };
+		AD92AD6C1DFAAFA20097879C /* KDRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDRootClass.swift; sourceTree = "<group>"; };
+		AD92AD6D1DFAAFA20097879C /* KDShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDShowapiResBody.swift; sourceTree = "<group>"; };
 		AD94267F1DEE7BE6006D975D /* HuiLvHQList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQList.swift; sourceTree = "<group>"; };
 		AD9426801DEE7BE6006D975D /* HuiLvHQRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQRootClass.swift; sourceTree = "<group>"; };
 		AD9426811DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuiLvHQShowapiResBody.swift; sourceTree = "<group>"; };
@@ -310,7 +360,7 @@
 		ADB902531DE1D0C2001CF7F1 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationViewController.swift; sourceTree = "<group>"; };
 		ADC3B2AB1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstellationSummaryTableViewCell.swift; sourceTree = "<group>"; };
-		ADC5AE7E1DC9B247006730B4 /* TrainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+		ADC5AE7E1DC9B247006730B4 /* QueryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryView.swift; sourceTree = "<group>"; };
 		ADCD6AD71DDECEAE00BB154A /* LuckForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckForm.swift; sourceTree = "<group>"; };
 		ADCD6AE01DDEDD6600BB154A /* LuckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckTableViewCell.swift; sourceTree = "<group>"; };
 		ADD9DAC51DE5DC78005A2EDF /* GuiRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiRenTableViewCell.swift; sourceTree = "<group>"; };
@@ -332,7 +382,9 @@
 		ADE94F031DCC700C00F98A58 /* TrainTimeListRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTimeListRootClass.swift; sourceTree = "<group>"; };
 		ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTimeListShowapiResBody.swift; sourceTree = "<group>"; };
 		ADE94F091DCC7C8600F98A58 /* LotteryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryHelper.swift; sourceTree = "<group>"; };
-		ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainHelper.swift; sourceTree = "<group>"; };
+		ADE94F0A1DCC7C8600F98A58 /* EntertainmentHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntertainmentHelper.swift; sourceTree = "<group>"; };
+		ADED1BAD1DF6BB43004553E5 /* QQLuckRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLuckRootClass.swift; sourceTree = "<group>"; };
+		ADED1BAE1DF6BB43004553E5 /* QQLuckShowapiResBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLuckShowapiResBody.swift; sourceTree = "<group>"; };
 		ADFE265A1DDC642C00CBA61F /* WeatherDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
 		ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibByMrOwl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -389,6 +441,7 @@
 		AD29533C1DD029DF009465C6 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				AD6913151DF578ED0091E424 /* UsefulPickerView */,
 				ADB902471DE1D0A9001CF7F1 /* SnapKit */,
 				ADFE26631DDC73DC00CBA61F /* LibByMrOwl.swift */,
 				AD6C4B8B1DD9BD4A0084C291 /* Control */,
@@ -401,7 +454,7 @@
 		AD2953461DD052F9009465C6 /* NewestLottery */ = {
 			isa = PBXGroup;
 			children = (
-				AD2953401DD052F4009465C6 /* NewestLotteryResult.swift */,
+				AD2953401DD052F4009465C6 /* LotteryResult.swift */,
 				AD2953411DD052F4009465C6 /* NewestLotteryRootClass.swift */,
 				AD2953421DD052F4009465C6 /* NewestLotteryShowapiResBody.swift */,
 			);
@@ -411,7 +464,6 @@
 		AD29534D1DD05484009465C6 /* MutileLottery */ = {
 			isa = PBXGroup;
 			children = (
-				AD2953471DD0547B009465C6 /* MutileLotteryResult.swift */,
 				AD2953481DD0547B009465C6 /* MutileLotteryRootClass.swift */,
 				AD2953491DD0547B009465C6 /* MutileLotteryShowapiResBody.swift */,
 			);
@@ -421,7 +473,6 @@
 		AD2953541DD054B3009465C6 /* SingleLottery */ = {
 			isa = PBXGroup;
 			children = (
-				AD29534E1DD054B0009465C6 /* SingleLotteryResult.swift */,
 				AD29534F1DD054B0009465C6 /* SingleLotteryRootClass.swift */,
 				AD2953501DD054B0009465C6 /* SingleLotteryShowapiResBody.swift */,
 			);
@@ -465,11 +516,12 @@
 			children = (
 				AD29533C1DD029DF009465C6 /* Extra */,
 				AD2BA4D71DBE486C00F41E69 /* Lottery */,
-				AD2BA4D61DBE486C00F41E69 /* Train */,
+				AD2BA4D61DBE486C00F41E69 /* Entertainment */,
 				AD2BA4D51DBE486C00F41E69 /* Car */,
 				AD2BA4D41DBE486C00F41E69 /* Life */,
-				AD2BA4A61DBE486C00F41E69 /* AppDelegate.swift */,
+				AD520AEB1DF8EC70007F924C /* Setting */,
 				AD2BA4E41DBE486C00F41E69 /* Config.swift */,
+				AD2BA4A61DBE486C00F41E69 /* AppDelegate.swift */,
 				AD2BA4AD1DBE486C00F41E69 /* Assets.xcassets */,
 				AD2BA4AF1DBE486C00F41E69 /* LaunchScreen.storyboard */,
 				AD2BA4B21DBE486C00F41E69 /* Info.plist */,
@@ -515,14 +567,14 @@
 			name = Car;
 			sourceTree = "<group>";
 		};
-		AD2BA4D61DBE486C00F41E69 /* Train */ = {
+		AD2BA4D61DBE486C00F41E69 /* Entertainment */ = {
 			isa = PBXGroup;
 			children = (
 				AD2BA4DB1DBE486C00F41E69 /* M */,
 				AD2BA4DC1DBE486C00F41E69 /* V */,
 				AD2BA4DD1DBE486C00F41E69 /* C */,
 			);
-			name = Train;
+			name = Entertainment;
 			sourceTree = "<group>";
 		};
 		AD2BA4D71DBE486C00F41E69 /* Lottery */ = {
@@ -539,6 +591,8 @@
 			isa = PBXGroup;
 			children = (
 				AD37E2121DCADA240072C2A4 /* LotteryView.swift */,
+				AD5888C61E0A697900F6843C /* LotteryTableViewCell.swift */,
+				AD15E62C1E0BB9DF00250CC1 /* lotteryTypeTableViewCell.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -559,6 +613,9 @@
 			isa = PBXGroup;
 			children = (
 				AD2BA4EC1DBE486C00F41E69 /* LotteryViewController.swift */,
+				AD5888CF1E0A76F900F6843C /* newLotteryTableViewController.swift */,
+				AD15E6281E0BA7FD00250CC1 /* queryTableViewController.swift */,
+				AD15E62A1E0BB47500250CC1 /* lotterytypeChooseTableViewController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -566,7 +623,10 @@
 		AD2BA4DB1DBE486C00F41E69 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				ADE94F0A1DCC7C8600F98A58 /* TrainHelper.swift */,
+				AD9426921DEE7F37006D975D /* HuiLv */,
+				ADE94F0A1DCC7C8600F98A58 /* EntertainmentHelper.swift */,
+				AD8EE8D11E01925800356D99 /* Poem */,
+				ADED1BB11DF6BB43004553E5 /* QQLuck */,
 				ADE94F081DCC701200F98A58 /* TrainTimeList */,
 				ADE94F011DCC6FE600F98A58 /* TrainTicketInfo */,
 			);
@@ -576,7 +636,11 @@
 		AD2BA4DC1DBE486C00F41E69 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				ADC5AE7E1DC9B247006730B4 /* TrainView.swift */,
+				AD9426931DEEA17D006D975D /* HuiLvCalcView.swift */,
+				ADC5AE7E1DC9B247006730B4 /* QueryView.swift */,
+				AD89591D1DF6975A00CE9CDD /* QQLuckView.swift */,
+				AD8EE8D41E01925800356D99 /* PoemConditionChooseView.swift */,
+				AD3BDB001E02A07A00CCBEA6 /* PoemTableViewCell.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -584,7 +648,10 @@
 		AD2BA4DD1DBE486C00F41E69 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				AD2BA4EA1DBE486C00F41E69 /* TrainViewController.swift */,
+				AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */,
+				AD2BA4EA1DBE486C00F41E69 /* QueryViewController.swift */,
+				AD8959141DF6969500CE9CDD /* QQLuckViewController.swift */,
+				AD3BDAF71E02446300CCBEA6 /* PoemViewController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -623,7 +690,6 @@
 		AD2BA4E11DBE486C00F41E69 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				AD9426921DEE7F37006D975D /* HuiLv */,
 				AD6B9A881DED83B600A82C5B /* KuaiDi */,
 				ADA94DDF1DD1B1500093D049 /* Constellation */,
 				AD37E2271DCAE6060072C2A4 /* WeatherClass */,
@@ -640,7 +706,7 @@
 				ADA94DC71DD171730093D049 /* ConstellationBox.swift */,
 				ADFE26651DDC73DC00CBA61F /* Weather */,
 				ADD9DAC41DE5DC0C005A2EDF /* Constellation */,
-				AD9426931DEEA17D006D975D /* HuiLvCalcView.swift */,
+				AD4B50511DF7F1B6004936B7 /* TitleBtn.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -653,7 +719,6 @@
 				AD16132B1DDB50B000EB53F0 /* WeatherContentViewController.swift */,
 				ADC3B2A71DDD579A00203AAF /* ConstellationViewController.swift */,
 				ADE886EA1DEDA4350086F2CF /* KuaiDiViewController.swift */,
-				AD125FD31DEFB9CE0026E9C4 /* HuiLvViewController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -671,12 +736,38 @@
 			name = WeatherClass;
 			sourceTree = "<group>";
 		};
+		AD520AEB1DF8EC70007F924C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B505C1DF8061D004936B7 /* SettingViewController.swift */,
+				AD520AEC1DF90471007F924C /* SettingTableViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		AD6913151DF578ED0091E424 /* UsefulPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AD6913161DF578ED0091E424 /* Area.plist */,
+				AD6913171DF578ED0091E424 /* City.plist */,
+				AD6913181DF578ED0091E424 /* Picker.swift */,
+				AD6913191DF578ED0091E424 /* PickerView.swift */,
+				AD69131A1DF578ED0091E424 /* Province.plist */,
+				AD69131B1DF578ED0091E424 /* SelectionTextField.swift */,
+				AD69131C1DF578ED0091E424 /* ToolBarView.swift */,
+				AD69131D1DF578ED0091E424 /* UsefulPickerView.swift */,
+			);
+			name = UsefulPickerView;
+			path = UsefulPickerView/Source;
+			sourceTree = "<group>";
+		};
 		AD6B9A881DED83B600A82C5B /* KuaiDi */ = {
 			isa = PBXGroup;
 			children = (
-				AD6B9A7B1DED83B600A82C5B /* KuaiDiData.swift */,
-				AD6B9A7C1DED83B600A82C5B /* KuaiDiRootClass.swift */,
-				AD6B9A7D1DED83B600A82C5B /* KuaiDiShowapiResBody.swift */,
+				AD92AD6B1DFAAFA20097879C /* KDData.swift */,
+				AD92AD6C1DFAAFA20097879C /* KDRootClass.swift */,
+				AD92AD6D1DFAAFA20097879C /* KDShowapiResBody.swift */,
+				AD92AD6A1DFAAFA20097879C /* KuaiDiCompany */,
 			);
 			name = KuaiDi;
 			sourceTree = "<group>";
@@ -689,6 +780,25 @@
 				AD6C4B8E1DD9F8DB0084C291 /* SwiftPages.swift */,
 			);
 			name = Control;
+			sourceTree = "<group>";
+		};
+		AD8EE8D11E01925800356D99 /* Poem */ = {
+			isa = PBXGroup;
+			children = (
+				AD8EE8C61E01925800356D99 /* PoemRootClass.swift */,
+				AD8EE8C71E01925800356D99 /* PoemShowapiResBody.swift */,
+			);
+			name = Poem;
+			sourceTree = "<group>";
+		};
+		AD92AD6A1DFAAFA20097879C /* KuaiDiCompany */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C98C71EC47CB600F54BF0 /* KDComExpressList.swift */,
+				AD3C98C81EC47CB600F54BF0 /* KDComRootClass.swift */,
+				AD3C98C91EC47CB600F54BF0 /* KDComShowapiResBody.swift */,
+			);
+			name = KuaiDiCompany;
 			sourceTree = "<group>";
 		};
 		AD9426901DEE7ED1006D975D /* HangQing */ = {
@@ -839,6 +949,15 @@
 				ADE94F041DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift */,
 			);
 			name = TrainTimeList;
+			sourceTree = "<group>";
+		};
+		ADED1BB11DF6BB43004553E5 /* QQLuck */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1BAD1DF6BB43004553E5 /* QQLuckRootClass.swift */,
+				ADED1BAE1DF6BB43004553E5 /* QQLuckShowapiResBody.swift */,
+			);
+			name = QQLuck;
 			sourceTree = "<group>";
 		};
 		ADFE26651DDC73DC00CBA61F /* Weather */ = {
@@ -1034,9 +1153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6565FD1DD8226E00979BF1 /* CODE LIGHT.OTF in Resources */,
+				AD6913271DF578ED0091E424 /* City.plist in Resources */,
 				AD6565F41DD81B3300979BF1 /* FZXQJW_0.TTF in Resources */,
 				AD2BA4B11DBE486C00F41E69 /* LaunchScreen.storyboard in Resources */,
+				AD69132A1DF578ED0091E424 /* Province.plist in Resources */,
 				AD2BA4AE1DBE486C00F41E69 /* Assets.xcassets in Resources */,
+				AD6913261DF578ED0091E424 /* Area.plist in Resources */,
 				ADB902411DE1CED3001CF7F1 /* EMcitydict_S.plist in Resources */,
 				ADB902421DE1CED3001CF7F1 /* EMcitydict.plist in Resources */,
 			);
@@ -1074,28 +1196,40 @@
 				AD2BA4A71DBE486C00F41E69 /* AppDelegate.swift in Sources */,
 				ADE94EFB1DCC6FB600F98A58 /* TrainTicketInfoData.swift in Sources */,
 				ADDD0B061DE72100005D10BE /* TextViewTableViewCell.swift in Sources */,
+				AD3BDAF81E02446300CCBEA6 /* PoemViewController.swift in Sources */,
 				ADB902431DE1CED3001CF7F1 /* EMCurrentCell.m in Sources */,
-				ADC5AE7F1DC9B247006730B4 /* TrainView.swift in Sources */,
-				AD6B9A7E1DED83B600A82C5B /* KuaiDiData.swift in Sources */,
+				ADC5AE7F1DC9B247006730B4 /* QueryView.swift in Sources */,
 				AD9426851DEE7BE6006D975D /* HuiLvHQRootClass.swift in Sources */,
 				AD2953521DD054B0009465C6 /* SingleLotteryRootClass.swift in Sources */,
 				AD9B0D651DC9A8E0004EEFB6 /* CarView.swift in Sources */,
+				AD15E6291E0BA7FD00250CC1 /* queryTableViewController.swift in Sources */,
+				AD15E62D1E0BB9DF00250CC1 /* lotteryTypeTableViewCell.swift in Sources */,
 				ADFE265B1DDC642C00CBA61F /* WeatherDataView.swift in Sources */,
 				AD0740D31DE483EE009F4DD6 /* RefreshTipView.swift in Sources */,
+				AD3C98CC1EC47CB600F54BF0 /* KDComShowapiResBody.swift in Sources */,
 				ADB9023F1DE1CED3001CF7F1 /* EMCityChoose_CurrentCity.m in Sources */,
+				AD3C98CB1EC47CB600F54BF0 /* KDComRootClass.swift in Sources */,
 				AD16132E1DDB620300EB53F0 /* WeatherContentView.swift in Sources */,
 				AD125FD41DEFB9CE0026E9C4 /* HuiLvViewController.swift in Sources */,
 				ADB902441DE1CED3001CF7F1 /* EMHotCitysCell.m in Sources */,
 				ADC3B2AC1DDDAB3900203AAF /* ConstellationSummaryTableViewCell.swift in Sources */,
 				ADA94DDC1DD1B14C0093D049 /* Day.swift in Sources */,
+				AD69132B1DF578ED0091E424 /* SelectionTextField.swift in Sources */,
 				AD9426941DEEA17D006D975D /* HuiLvCalcView.swift in Sources */,
 				AD1613301DDB71A200EB53F0 /* MainWeatherView.swift in Sources */,
+				AD5888C71E0A697900F6843C /* LotteryTableViewCell.swift in Sources */,
 				AD2953591DD0578A009465C6 /* LotteryTypeResult.swift in Sources */,
 				ADB9025C1DE1D0C2001CF7F1 /* LayoutConstraint.swift in Sources */,
+				AD92AD701DFAAFA20097879C /* KDShowapiResBody.swift in Sources */,
 				ADA94DC81DD171730093D049 /* ConstellationBox.swift in Sources */,
 				ADE94F071DCC700C00F98A58 /* TrainTimeListShowapiResBody.swift in Sources */,
+				AD4B50521DF7F1B6004936B7 /* TitleBtn.swift in Sources */,
 				ADB902401DE1CED3001CF7F1 /* EMCityChoose.m in Sources */,
+				AD92AD6F1DFAAFA20097879C /* KDRootClass.swift in Sources */,
 				AD2BA4E51DBE486C00F41E69 /* Config.swift in Sources */,
+				AD4B505D1DF8061D004936B7 /* SettingViewController.swift in Sources */,
+				AD8EE8C81E01925800356D99 /* PoemRootClass.swift in Sources */,
+				ADED1BAF1DF6BB43004553E5 /* QQLuckRootClass.swift in Sources */,
 				ADB902561DE1D0C2001CF7F1 /* ConstraintDescription.swift in Sources */,
 				ADB902591DE1D0C2001CF7F1 /* ConstraintRelation.swift in Sources */,
 				AD16132C1DDB50B000EB53F0 /* WeatherContentViewController.swift in Sources */,
@@ -1105,13 +1239,12 @@
 				AD37E2211DCAE5F90072C2A4 /* CityInfo.swift in Sources */,
 				AD29534B1DD0547B009465C6 /* MutileLotteryRootClass.swift in Sources */,
 				AD37E2131DCADA240072C2A4 /* LotteryView.swift in Sources */,
-				AD6B9A801DED83B600A82C5B /* KuaiDiShowapiResBody.swift in Sources */,
 				ADE94EE71DCC6CD500F98A58 /* LifeHelper.swift in Sources */,
-				ADE94F0C1DCC7C8600F98A58 /* TrainHelper.swift in Sources */,
+				ADE94F0C1DCC7C8600F98A58 /* EntertainmentHelper.swift in Sources */,
 				AD29534C1DD0547B009465C6 /* MutileLotteryShowapiResBody.swift in Sources */,
 				ADB9025F1DE1D0C2001CF7F1 /* ViewController+SnapKit.swift in Sources */,
 				AD5098D11DEC1253009413D1 /* OilPriceTableViewController.swift in Sources */,
-				AD2BA4EB1DBE486C00F41E69 /* TrainViewController.swift in Sources */,
+				AD2BA4EB1DBE486C00F41E69 /* QueryViewController.swift in Sources */,
 				ADE94EFE1DCC6FB600F98A58 /* TrainTicketInfoShowapiResBody.swift in Sources */,
 				AD9426881DEE7BE6006D975D /* HuiLvShowapiResBody.swift in Sources */,
 				ADB902301DE1CE9E001CF7F1 /* ChineseToPinyin.m in Sources */,
@@ -1121,11 +1254,16 @@
 				AD9426841DEE7BE6006D975D /* HuiLvHQList.swift in Sources */,
 				AD37E2181DCAE0940072C2A4 /* WeiZhangViewController.swift in Sources */,
 				ADC3B2A81DDD579A00203AAF /* ConstellationViewController.swift in Sources */,
+				AD6913281DF578ED0091E424 /* Picker.swift in Sources */,
 				AD6C4B8F1DD9F8DB0084C291 /* SwiftPages.swift in Sources */,
+				AD3C98CA1EC47CB600F54BF0 /* KDComExpressList.swift in Sources */,
 				AD37E2241DCAE5F90072C2A4 /* Now.swift in Sources */,
+				AD92AD6E1DFAAFA20097879C /* KDData.swift in Sources */,
+				AD8EE8D51E01925800356D99 /* PoemConditionChooseView.swift in Sources */,
 				ADB9025D1DE1D0C2001CF7F1 /* SnapKit.swift in Sources */,
 				ADE94EFF1DCC6FB600F98A58 /* SeatInfo.swift in Sources */,
 				AD29535A1DD0578A009465C6 /* LotteryTypeRootClass.swift in Sources */,
+				AD8EE8C91E01925800356D99 /* PoemShowapiResBody.swift in Sources */,
 				ADB9025A1DE1D0C2001CF7F1 /* Debugging.swift in Sources */,
 				AD0740D21DE483EE009F4DD6 /* RefreshControl.swift in Sources */,
 				AD9426861DEE7BE6006D975D /* HuiLvHQShowapiResBody.swift in Sources */,
@@ -1137,19 +1275,26 @@
 				AD2953441DD052F4009465C6 /* NewestLotteryRootClass.swift in Sources */,
 				AD2953451DD052F4009465C6 /* NewestLotteryShowapiResBody.swift in Sources */,
 				AD2BA4ED1DBE486C00F41E69 /* LotteryViewController.swift in Sources */,
-				AD29534A1DD0547B009465C6 /* MutileLotteryResult.swift in Sources */,
 				ADE94F051DCC700C00F98A58 /* TrainTimeListData.swift in Sources */,
 				AD9426871DEE7BE6006D975D /* HuiLvRootClass.swift in Sources */,
+				AD6913291DF578ED0091E424 /* PickerView.swift in Sources */,
 				ADB902551DE1D0C2001CF7F1 /* ConstraintAttributes.swift in Sources */,
+				AD520AED1DF90471007F924C /* SettingTableViewController.swift in Sources */,
+				AD3BDB011E02A07B00CCBEA6 /* PoemTableViewCell.swift in Sources */,
 				ADAE75181DD0925000725A9D /* WeatherBox.swift in Sources */,
+				AD8959151DF6969500CE9CDD /* QQLuckViewController.swift in Sources */,
 				ADE94EF21DCC6F6800F98A58 /* OilPriceList.swift in Sources */,
 				AD090F421DE89855007850B0 /* CarHelper.swift in Sources */,
+				AD15E62B1E0BB47500250CC1 /* lotterytypeChooseTableViewController.swift in Sources */,
+				AD5888D01E0A76F900F6843C /* newLotteryTableViewController.swift in Sources */,
 				AD2BA4E91DBE486C00F41E69 /* CarViewController.swift in Sources */,
 				ADE886EB1DEDA4350086F2CF /* KuaiDiViewController.swift in Sources */,
 				ADE94EFC1DCC6FB600F98A58 /* TrainTicketPrinceRootClass.swift in Sources */,
 				ADB902571DE1D0C2001CF7F1 /* ConstraintItem.swift in Sources */,
 				ADD9DAC61DE5DC78005A2EDF /* GuiRenTableViewCell.swift in Sources */,
-				AD2953431DD052F4009465C6 /* NewestLotteryResult.swift in Sources */,
+				AD2953431DD052F4009465C6 /* LotteryResult.swift in Sources */,
+				ADED1BB01DF6BB43004553E5 /* QQLuckShowapiResBody.swift in Sources */,
+				AD69132D1DF578ED0091E424 /* UsefulPickerView.swift in Sources */,
 				ADA94DDD1DD1B14C0093D049 /* ConstellationRootClass.swift in Sources */,
 				AD29533E1DD02B8D009465C6 /* ShowApiRequest.swift in Sources */,
 				ADE94EEC1DCC6F0D00F98A58 /* TrafficRestrictionRootClass.swift in Sources */,
@@ -1158,9 +1303,9 @@
 				ADE94EEB1DCC6F0D00F98A58 /* TrafficRestrictionData.swift in Sources */,
 				ADE94F0B1DCC7C8600F98A58 /* LotteryHelper.swift in Sources */,
 				AD37E2151DCADD4B0072C2A4 /* WeiZhangView.swift in Sources */,
+				AD69132C1DF578ED0091E424 /* ToolBarView.swift in Sources */,
+				AD89591E1DF6975A00CE9CDD /* QQLuckView.swift in Sources */,
 				AD16132A1DDB212E00EB53F0 /* WeatherViewController.swift in Sources */,
-				AD2953511DD054B0009465C6 /* SingleLotteryResult.swift in Sources */,
-				AD6B9A7F1DED83B600A82C5B /* KuaiDiRootClass.swift in Sources */,
 				AD37E2261DCAE5F90072C2A4 /* WeatherShowapiResBody.swift in Sources */,
 				ADFE26641DDC73DC00CBA61F /* LibByMrOwl.swift in Sources */,
 				ADE94EED1DCC6F0D00F98A58 /* TrafficRestrictionShowapiResBody.swift in Sources */,

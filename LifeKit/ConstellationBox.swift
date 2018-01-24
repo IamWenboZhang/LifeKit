@@ -69,9 +69,9 @@ class ConstellationBox: UIView {
         self.Label_todaylove.text = "爱情指数:"
         self.Label_todaywork.text = "工作指数:"
         self.Label_todaymoney.text = "财运指数:"
-        self.ImgView_todaymoney.image = UIImage(named: "car_32px")
-        self.ImgView_todaywork.image = UIImage(named: "car_32px")
-        self.ImgView_todaylove.image = UIImage(named: "car_32px")
+        self.ImgView_todaymoney.image = UIImage(named: "\(constellationdata.showapiResBody.day.moneyStar)star")
+        self.ImgView_todaywork.image = UIImage(named: "\(constellationdata.showapiResBody.day.workStar)star")
+        self.ImgView_todaylove.image = UIImage(named: "\(constellationdata.showapiResBody.day.loveStar)star")
         self.ImgView_constellation.image = UIImage(named: constellationdata.showapiResBody.star)
         
         self.addSubview(Button)

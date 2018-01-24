@@ -17,6 +17,8 @@ class MainWeatherView: UIView {
         // Drawing code
     }
     */
+    var ImgView_Bkg = UIImageView()
+    
     var Label_City = UILabel()
     
     var Label_Weather = UILabel()
@@ -30,6 +32,8 @@ class MainWeatherView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        
+        
         let unitHeight = (frame.size.height-10)/8
         let imgHeight = unitHeight*3
         
@@ -37,6 +41,8 @@ class MainWeatherView: UIView {
         self.layer.shadowColor = UIColor.blackColor().CGColor
         self.layer.shadowOffset = CGSize(width: 1, height: 1)
         
+        ImgView_Bkg = UIImageView(frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+        ImgView_Bkg.image = UIImage(named: "bkg_weather")
         Label_City = UILabel(frame:CGRectMake(0,5,SCREEN_WIDTH,unitHeight*2))
         Label_City.textAlignment = .Center
         Label_City.font = UIFont.systemFontOfSize(25)
@@ -50,7 +56,7 @@ class MainWeatherView: UIView {
 
         
         
-        
+        self.addSubview(ImgView_Bkg)
         self.addSubview(Label_City)
         self.addSubview(Label_Weather)
         self.addSubview(ImgView_Weather)

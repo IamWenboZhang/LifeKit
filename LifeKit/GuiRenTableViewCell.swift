@@ -24,6 +24,14 @@ class GuiRenTableViewCell: UITableViewCell {
         return label
     }()
     
+//    let imgview_background:UIImageView = {
+//        let imgview = UIImageView()
+//        imgview.image = UIImage(named: "bkg_constellation")
+//        imgview.contentMode = .ScaleAspectFit
+//        return imgview
+//    }()
+
+    
     var guirenImgView:UIImageView = {
        let imgView = UIImageView()
     return imgView
@@ -32,7 +40,7 @@ class GuiRenTableViewCell: UITableViewCell {
     func setUI(){
         backgroundColor = UIColor.lightGrayColor()
         contentView.backgroundColor = UIColor.whiteColor()
-        
+//        contentView.addSubview(imgview_background)
         contentView.addSubview(headLabel)
         contentView.addSubview(guirenLabel)
         contentView.addSubview(guirenImgView)
@@ -40,6 +48,10 @@ class GuiRenTableViewCell: UITableViewCell {
         contentView.snp_makeConstraints { (make) in
             make.edges.equalTo(UIEdgeInsetsMake(5, 5, 0, -5))
         }
+        
+//        imgview_background.snp_makeConstraints { (make) in
+//            make.left.top.right.bottom.equalTo(self)
+//        }
         
         headLabel.snp_makeConstraints { (make) in
             make.top.left.equalTo(contentView).offset(3)
